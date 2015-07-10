@@ -38,15 +38,10 @@
 		189838D31B33C68C00C8286E /* FunctionManageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 189838D21B33C68C00C8286E /* FunctionManageObject.m */; };
 		189838D71B33C68C00C8286E /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 189838D61B33C68C00C8286E /* UIImage+ImageEffects.m */; };
 		189838DB1B33C68C00C8286E /* NSString+StringManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 189838DA1B33C68C00C8286E /* NSString+StringManage.m */; };
-		189838DE1B33C68C00C8286E /* DataPersistenceManager in Resources */ = {isa = PBXBuildFile; fileRef = 189838DD1B33C68C00C8286E /* DataPersistenceManager */; };
-		189838E01B33C68C00C8286E /* ParseData in Resources */ = {isa = PBXBuildFile; fileRef = 189838DF1B33C68C00C8286E /* ParseData */; };
-		189838E21B33C68C00C8286E /* NetServiceManager in Resources */ = {isa = PBXBuildFile; fileRef = 189838E11B33C68C00C8286E /* NetServiceManager */; };
-		189838E51B33C68C00C8286E /* ViewModel in Resources */ = {isa = PBXBuildFile; fileRef = 189838E41B33C68C00C8286E /* ViewModel */; };
 		189838E91B33C68C00C8286E /* ModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 189838E81B33C68C00C8286E /* ModelViewController.m */; };
 		189838ED1B33C68C00C8286E /* BaseDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 189838EC1B33C68C00C8286E /* BaseDataModel.m */; };
 		189838EF1B33C68C00C8286E /* View in Resources */ = {isa = PBXBuildFile; fileRef = 189838EE1B33C68C00C8286E /* View */; };
 		189838F11B33C68C00C8286E /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = 189838F01B33C68C00C8286E /* Controller */; };
-		189838F61B33C68C00C8286E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189838F41B33C68C00C8286E /* LaunchScreen.xib */; };
 		189839021B33C68C00C8286E /* FashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 189839011B33C68C00C8286E /* FashionTests.m */; };
 		1898390E1B33C84800C8286E /* ImageLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898390D1B33C84800C8286E /* ImageLibraryController.m */; };
 		189839711B33C8CE00C8286E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 189839121B33C8CE00C8286E /* AFHTTPRequestOperation.m */; };
@@ -482,13 +477,11 @@
 		189838C91B33C68C00C8286E /* ManageCenter */ = {
 			isa = PBXGroup;
 			children = (
-				189838E11B33C68C00C8286E /* NetServiceManager */,
 				189838CA1B33C68C00C8286E /* ClassManager */,
 				189838CC1B33C68C00C8286E /* ColorManager */,
 				189838D01B33C68C00C8286E /* FunctionManager */,
 				189838D41B33C68C00C8286E /* ImageMagager */,
 				189838D81B33C68C00C8286E /* StringsManager */,
-				189838DC1B33C68C00C8286E /* DataManager */,
 			);
 			name = ManageCenter;
 			sourceTree = "<group>";
@@ -539,55 +532,13 @@
 			name = StringsManager;
 			sourceTree = "<group>";
 		};
-		189838DC1B33C68C00C8286E /* DataManager */ = {
-			isa = PBXGroup;
-			children = (
-				189838DF1B33C68C00C8286E /* ParseData */,
-				189838DD1B33C68C00C8286E /* DataPersistenceManager */,
-			);
-			name = DataManager;
-			sourceTree = "<group>";
-		};
-		189838DD1B33C68C00C8286E /* DataPersistenceManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = DataPersistenceManager;
-			path = ManageCenter/DataManager/DataPersistenceManager;
-			sourceTree = "<group>";
-		};
-		189838DF1B33C68C00C8286E /* ParseData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ParseData;
-			path = ManageCenter/DataManager/ParseData;
-			sourceTree = "<group>";
-		};
-		189838E11B33C68C00C8286E /* NetServiceManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = NetServiceManager;
-			path = ManageCenter/NetServiceManager;
-			sourceTree = "<group>";
-		};
 		189838E31B33C68C00C8286E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				189838E41B33C68C00C8286E /* ViewModel */,
 				189838E61B33C68C00C8286E /* ControllerModel */,
 				189838EA1B33C68C00C8286E /* DataModel */,
 			);
 			name = Model;
-			sourceTree = "<group>";
-		};
-		189838E41B33C68C00C8286E /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModel;
-			path = Model/ViewModel;
 			sourceTree = "<group>";
 		};
 		189838E61B33C68C00C8286E /* ControllerModel */ = {
@@ -890,11 +841,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1837346E1B4D046400720BFE /* MainDownCell.xib in Resources */,
-				189838E01B33C68C00C8286E /* ParseData in Resources */,
-				189838E21B33C68C00C8286E /* NetServiceManager in Resources */,
 				189838C41B33C68C00C8286E /* ThirdLibrary in Resources */,
-				189838DE1B33C68C00C8286E /* DataPersistenceManager in Resources */,
-				189838F61B33C68C00C8286E /* LaunchScreen.xib in Resources */,
 				183734721B4D046400720BFE /* MainRankingCell.xib in Resources */,
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
@@ -902,7 +849,6 @@
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
 				189838C21B33C68C00C8286E /* Fashion-Prefix.pch in Resources */,
 				189838EF1B33C68C00C8286E /* View in Resources */,
-				189838E51B33C68C00C8286E /* ViewModel in Resources */,
 				189838C61B33C68C00C8286E /* CustomWidgets in Resources */,
 				1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */,
 				1898398D1B33C8CE00C8286E /* SDWebImageLICENSE in Resources */,
