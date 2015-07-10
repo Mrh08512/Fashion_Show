@@ -385,6 +385,22 @@
 			path = RootVC;
 			sourceTree = "<group>";
 		};
+		188123401B4F9B1C00728B36 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			path = Model/ViewModel;
+			sourceTree = "<group>";
+		};
+		188123411B4F9B4300728B36 /* NetHttpManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NetHttpManager;
+			path = ManageCenter/NetHttpManager;
+			sourceTree = "<group>";
+		};
 		189838A41B33C68C00C8286E = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +493,7 @@
 		189838C91B33C68C00C8286E /* ManageCenter */ = {
 			isa = PBXGroup;
 			children = (
+				188123411B4F9B4300728B36 /* NetHttpManager */,
 				189838CA1B33C68C00C8286E /* ClassManager */,
 				189838CC1B33C68C00C8286E /* ColorManager */,
 				189838D01B33C68C00C8286E /* FunctionManager */,
@@ -535,6 +552,7 @@
 		189838E31B33C68C00C8286E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				188123401B4F9B1C00728B36 /* ViewModel */,
 				189838E61B33C68C00C8286E /* ControllerModel */,
 				189838EA1B33C68C00C8286E /* DataModel */,
 			);
