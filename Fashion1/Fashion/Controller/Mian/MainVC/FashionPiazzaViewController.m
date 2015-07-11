@@ -9,11 +9,13 @@
 #import "FashionPiazzaViewController.h"
 #import "FashionPiazzaCell.h"
 #import "ConmetsCellTableViewCell.h"
+
 @interface FashionPiazzaViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic , strong) UITableView *myTableView;
 @property (nonatomic, strong)  NSMutableArray *detailDto;
 @property (nonatomic, strong)  UIButton *relaseButton;
+
 @end
 
 @implementation FashionPiazzaViewController
@@ -85,9 +87,7 @@
         FashionPiazzaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FashionPiazzaCell"];
         
         return cell;
-    }
-    else
-    {
+    } else {
         ConmetsCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConmetsCellTableViewCell"];
         return cell;
     }
@@ -99,10 +99,8 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-    return 502;
-    }
-    else
-    {
+        return 502;
+    } else {
         return 50;
     }
 
@@ -113,18 +111,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-
-
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     static float newY = 0;
     static float oldY = 0;
-    newY= scrollView.contentOffset.y;
+    newY = scrollView.contentOffset.y;
     if (ABS(newY - oldY) > 30) {
         if (newY > oldY && newY > 1) {
             _relaseButton.hidden = NO;
-        }else if(newY < oldY ){
+        } else if (newY < oldY ){
             _relaseButton.hidden = YES;
         }
         oldY = newY;

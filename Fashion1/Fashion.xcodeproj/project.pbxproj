@@ -98,6 +98,7 @@
 		18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B021B33D6C000C8286E /* UIView+MJExtension.m */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
+		9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0411B5144C100A4844C /* PlazaPublishViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -277,6 +278,8 @@
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
 		18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarItem.m; sourceTree = "<group>"; };
+		9695F0401B5144C100A4844C /* PlazaPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishViewController.h; sourceTree = "<group>"; };
+		9695F0411B5144C100A4844C /* PlazaPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -372,6 +375,8 @@
 				183D6C091B4B74EA00577577 /* MainViewController.m */,
 				183D6C211B4BC4BF00577577 /* FashionPiazzaViewController.h */,
 				183D6C221B4BC4BF00577577 /* FashionPiazzaViewController.m */,
+				9695F0401B5144C100A4844C /* PlazaPublishViewController.h */,
+				9695F0411B5144C100A4844C /* PlazaPublishViewController.m */,
 			);
 			path = MainVC;
 			sourceTree = "<group>";
@@ -952,6 +957,7 @@
 				189839901B33C8CE00C8286E /* UIButton+WebCache.m in Sources */,
 				189838CF1B33C68C00C8286E /* UIColor+CustomColor.m in Sources */,
 				18983B071B33D6C000C8286E /* MJRefreshHeaderView.m in Sources */,
+				9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */,
 				189839781B33C8CE00C8286E /* AFURLRequestSerialization.m in Sources */,
 				189839751B33C8CE00C8286E /* AFNetworkReachabilityManager.m in Sources */,
 				189838C01B33C68C00C8286E /* Fashion.xcdatamodeld in Sources */,

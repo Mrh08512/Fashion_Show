@@ -147,7 +147,7 @@
 {
     
     UITableViewCell *cell;
-    cell  =  [self congfigCell:indexPath withTable:tableView];
+    cell = [self congfigCell:indexPath withTable:tableView];
     return cell;
    
 
