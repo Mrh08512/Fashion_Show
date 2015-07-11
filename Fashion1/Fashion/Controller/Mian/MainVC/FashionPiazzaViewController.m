@@ -9,6 +9,7 @@
 #import "FashionPiazzaViewController.h"
 #import "FashionPiazzaCell.h"
 #import "ConmetsCellTableViewCell.h"
+#import "PlazaPublishViewController.h"
 
 @interface FashionPiazzaViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -63,7 +64,8 @@
 
 - (void)relaseProduct:(UIButton *)button
 {
-    
+    PlazaPublishViewController *plazaPublishVC = [PlazaPublishViewController new];
+    [self.navigationController pushViewController:plazaPublishVC animated:YES];
 }
 
 #pragma mark - UITableViewDataSource/Delegate

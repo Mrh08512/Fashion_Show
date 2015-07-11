@@ -15,4 +15,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import "ClassManageObject.h"
+#import "TKit.h"
+#import "Masonry.h"
 #endif

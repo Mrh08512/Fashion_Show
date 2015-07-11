@@ -10,6 +10,10 @@
 
 @interface PlazaPublishViewController ()
 
+@property (weak, nonatomic) UIImageView *largePhotoImageView;
+
+@property (strong, nonatomic) NSMutableArray *photos;
+
 @end
 
 @implementation PlazaPublishViewController
@@ -17,21 +21,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - setup
+
+- (void)setupPhotos {
+    
+    UIImageView *largePhotoImageView = [UIImageView new];
+    largePhotoImageView.width = SCREEN_WIDTH;
+    largePhotoImageView.height = 200;
+    [self.view addSubview:largePhotoImageView];
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Private methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - Lazy Load
+
+- (NSMutableArray *)photos {
+    
+    if (!_photos) {
+        
+        _photos = [[NSMutableArray alloc] init];
+    }
+    return _photos;
 }
-*/
+
+#pragma mark - Public methods
 
 @end
