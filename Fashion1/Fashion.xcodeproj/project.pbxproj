@@ -98,6 +98,9 @@
 		18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B021B33D6C000C8286E /* UIView+MJExtension.m */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
+		96834C451B52530D00C7344D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C441B52530D00C7344D /* BaseViewController.m */; };
+		96834C4B1B526F3A00C7344D /* PublishPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C491B526F3A00C7344D /* PublishPhotoCollectionViewCell.m */; };
+		96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C4A1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib */; };
 		9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0411B5144C100A4844C /* PlazaPublishViewController.m */; };
 		9695F0741B51516500A4844C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0471B51516500A4844C /* GTMBase64.m */; };
 		9695F0751B51516500A4844C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F04A1B51516500A4844C /* Reachability.m */; };
@@ -306,6 +309,11 @@
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
 		18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarItem.m; sourceTree = "<group>"; };
+		96834C431B52530D00C7344D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		96834C441B52530D00C7344D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		96834C481B526F3A00C7344D /* PublishPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		96834C491B526F3A00C7344D /* PublishPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		96834C4A1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublishPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		9695F0401B5144C100A4844C /* PlazaPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishViewController.h; sourceTree = "<group>"; };
 		9695F0411B5144C100A4844C /* PlazaPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishViewController.m; sourceTree = "<group>"; };
 		9695F0461B51516500A4844C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -437,6 +445,9 @@
 				1837347B1B4E1E1D00720BFE /* ConmetsCellTableViewCell.h */,
 				1837347C1B4E1E1D00720BFE /* ConmetsCellTableViewCell.m */,
 				1837347D1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib */,
+				96834C481B526F3A00C7344D /* PublishPhotoCollectionViewCell.h */,
+				96834C491B526F3A00C7344D /* PublishPhotoCollectionViewCell.m */,
+				96834C4A1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib */,
 			);
 			name = DetailView;
 			sourceTree = "<group>";
@@ -691,6 +702,7 @@
 		189838F01B33C68C00C8286E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96834C421B52530D00C7344D /* Base */,
 				183D6C051B4B74B600577577 /* Mian */,
 				183D6C061B4B74B600577577 /* Root */,
 			);
@@ -874,6 +886,15 @@
 				18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */,
 			);
 			path = CustomTabbarVie;
+			sourceTree = "<group>";
+		};
+		96834C421B52530D00C7344D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				96834C431B52530D00C7344D /* BaseViewController.h */,
+				96834C441B52530D00C7344D /* BaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		9695F0431B51516500A4844C /* TKit */ = {
@@ -1138,6 +1159,7 @@
 				189838C81B33C68C00C8286E /* Other in Resources */,
 				18983B031B33D6C000C8286E /* MJRefresh.bundle in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
+				96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1216,11 +1238,13 @@
 				9695F0741B51516500A4844C /* GTMBase64.m in Sources */,
 				1898399B1B33C8CE00C8286E /* UIImageView+AFNetworking.m in Sources */,
 				9695F0781B51516500A4844C /* NSMutableDictionary+BasicTools.m in Sources */,
+				96834C451B52530D00C7344D /* BaseViewController.m in Sources */,
 				189839791B33C8CE00C8286E /* AFURLResponseSerialization.m in Sources */,
 				9695F0A61B516AE000A4844C /* MASViewConstraint.m in Sources */,
 				9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */,
 				9695F07A1B51516500A4844C /* UIActionSheet+Blocks.m in Sources */,
 				1898397D1B33C8CE00C8286E /* MBProgressHUD.m in Sources */,
+				96834C4B1B526F3A00C7344D /* PublishPhotoCollectionViewCell.m in Sources */,
 				1898390E1B33C84800C8286E /* ImageLibraryController.m in Sources */,
 				9695F0761B51516500A4844C /* TConst.m in Sources */,
 				1837346D1B4D046400720BFE /* MainDownCell.m in Sources */,
