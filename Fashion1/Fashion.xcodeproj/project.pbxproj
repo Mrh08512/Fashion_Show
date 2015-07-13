@@ -10,6 +10,13 @@
 		1805AE411B53813400BEB024 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE401B53813400BEB024 /* RankViewController.m */; };
 		1805AE461B5382D100BEB024 /* RankViewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE441B5382D100BEB024 /* RankViewViewCell.m */; };
 		1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE451B5382D100BEB024 /* RankViewViewCell.xib */; };
+		1805AE4D1B53909600BEB024 /* BrandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE4C1B53909600BEB024 /* BrandViewController.m */; };
+		1805AE511B5391E300BEB024 /* BrandViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE4F1B5391E300BEB024 /* BrandViewCell.m */; };
+		1805AE521B5391E300BEB024 /* BrandViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE501B5391E300BEB024 /* BrandViewCell.xib */; };
+		1805AE551B53A16000BEB024 /* OfferRewardControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE541B53A16000BEB024 /* OfferRewardControllerViewController.m */; };
+		1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE571B53AC2500BEB024 /* WaterFlowLayout.m */; };
+		1805AE5C1B53ADD500BEB024 /* NormolCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */; };
+		1805AE5D1B53ADD500BEB024 /* NormolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */; };
 		1837346B1B4D046400720BFE /* FashionPiazzaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734601B4D046400720BFE /* FashionPiazzaCell.m */; };
 		1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183734611B4D046400720BFE /* FashionPiazzaCell.xib */; };
 		1837346D1B4D046400720BFE /* MainDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734631B4D046400720BFE /* MainDownCell.m */; };
@@ -154,6 +161,18 @@
 		1805AE431B5382D100BEB024 /* RankViewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewViewCell.h; sourceTree = "<group>"; };
 		1805AE441B5382D100BEB024 /* RankViewViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewViewCell.m; sourceTree = "<group>"; };
 		1805AE451B5382D100BEB024 /* RankViewViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewViewCell.xib; sourceTree = "<group>"; };
+		1805AE4B1B53909600BEB024 /* BrandViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandViewController.h; sourceTree = "<group>"; };
+		1805AE4C1B53909600BEB024 /* BrandViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandViewController.m; sourceTree = "<group>"; };
+		1805AE4E1B5391E300BEB024 /* BrandViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandViewCell.h; sourceTree = "<group>"; };
+		1805AE4F1B5391E300BEB024 /* BrandViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandViewCell.m; sourceTree = "<group>"; };
+		1805AE501B5391E300BEB024 /* BrandViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrandViewCell.xib; sourceTree = "<group>"; };
+		1805AE531B53A16000BEB024 /* OfferRewardControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfferRewardControllerViewController.h; sourceTree = "<group>"; };
+		1805AE541B53A16000BEB024 /* OfferRewardControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfferRewardControllerViewController.m; sourceTree = "<group>"; };
+		1805AE561B53AC2500BEB024 /* WaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowLayout.h; sourceTree = "<group>"; };
+		1805AE571B53AC2500BEB024 /* WaterFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowLayout.m; sourceTree = "<group>"; };
+		1805AE591B53ADD500BEB024 /* NormolCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormolCollectionCell.h; sourceTree = "<group>"; };
+		1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormolCollectionCell.m; sourceTree = "<group>"; };
+		1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormolCollectionCell.xib; sourceTree = "<group>"; };
 		1837345F1B4D046400720BFE /* FashionPiazzaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionPiazzaCell.h; sourceTree = "<group>"; };
 		183734601B4D046400720BFE /* FashionPiazzaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionPiazzaCell.m; sourceTree = "<group>"; };
 		183734611B4D046400720BFE /* FashionPiazzaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FashionPiazzaCell.xib; sourceTree = "<group>"; };
@@ -428,6 +447,39 @@
 			name = RankView;
 			sourceTree = "<group>";
 		};
+		1805AE481B53901000BEB024 /* Brand */ = {
+			isa = PBXGroup;
+			children = (
+				1805AE491B53904300BEB024 /* BrandVC */,
+				1805AE4A1B53904300BEB024 /* BrandView */,
+			);
+			path = Brand;
+			sourceTree = "<group>";
+		};
+		1805AE491B53904300BEB024 /* BrandVC */ = {
+			isa = PBXGroup;
+			children = (
+				1805AE4B1B53909600BEB024 /* BrandViewController.h */,
+				1805AE4C1B53909600BEB024 /* BrandViewController.m */,
+				1805AE531B53A16000BEB024 /* OfferRewardControllerViewController.h */,
+				1805AE541B53A16000BEB024 /* OfferRewardControllerViewController.m */,
+			);
+			path = BrandVC;
+			sourceTree = "<group>";
+		};
+		1805AE4A1B53904300BEB024 /* BrandView */ = {
+			isa = PBXGroup;
+			children = (
+				1805AE4E1B5391E300BEB024 /* BrandViewCell.h */,
+				1805AE4F1B5391E300BEB024 /* BrandViewCell.m */,
+				1805AE501B5391E300BEB024 /* BrandViewCell.xib */,
+				1805AE591B53ADD500BEB024 /* NormolCollectionCell.h */,
+				1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */,
+				1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */,
+			);
+			path = BrandView;
+			sourceTree = "<group>";
+		};
 		1837345D1B4D046400720BFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -628,6 +680,8 @@
 		189838C71B33C68C00C8286E /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				1805AE561B53AC2500BEB024 /* WaterFlowLayout.h */,
+				1805AE571B53AC2500BEB024 /* WaterFlowLayout.m */,
 				1898390F1B33C86900C8286E /* Singleton.h */,
 			);
 			path = Other;
@@ -736,6 +790,7 @@
 		189838F01B33C68C00C8286E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1805AE481B53901000BEB024 /* Brand */,
 				96834C421B52530D00C7344D /* Base */,
 				183D6C051B4B74B600577577 /* Mian */,
 				183D6C061B4B74B600577577 /* Root */,
@@ -1178,6 +1233,7 @@
 			files = (
 				1837346E1B4D046400720BFE /* MainDownCell.xib in Resources */,
 				189838C41B33C68C00C8286E /* ThirdLibrary in Resources */,
+				1805AE521B5391E300BEB024 /* BrandViewCell.xib in Resources */,
 				183734721B4D046400720BFE /* MainRankingCell.xib in Resources */,
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
@@ -1187,6 +1243,7 @@
 				189838EF1B33C68C00C8286E /* View in Resources */,
 				189838C61B33C68C00C8286E /* CustomWidgets in Resources */,
 				9695F0A01B516AE000A4844C /* Info.plist in Resources */,
+				1805AE5D1B53ADD500BEB024 /* NormolCollectionCell.xib in Resources */,
 				1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */,
 				1898398D1B33C8CE00C8286E /* SDWebImageLICENSE in Resources */,
 				189838F11B33C68C00C8286E /* Controller in Resources */,
@@ -1233,6 +1290,7 @@
 				1898399E1B33C8CE00C8286E /* UIWebView+AFNetworking.m in Sources */,
 				189838E91B33C68C00C8286E /* ModelViewController.m in Sources */,
 				9695F07D1B51516500A4844C /* UIBarButtonItem+InitFunctions.m in Sources */,
+				1805AE4D1B53909600BEB024 /* BrandViewController.m in Sources */,
 				189839881B33C8CE00C8286E /* SDImageCache.m in Sources */,
 				189839721B33C8CE00C8286E /* AFHTTPRequestOperationManager.m in Sources */,
 				18983B061B33D6C000C8286E /* MJRefreshFooterView.m in Sources */,
@@ -1267,12 +1325,14 @@
 				1898397A1B33C8CE00C8286E /* AFURLSessionManager.m in Sources */,
 				96834C521B52A0B600C7344D /* PlazaPublishInputView.m in Sources */,
 				9695F0771B51516500A4844C /* NSMutableArray+TBasicTools.m in Sources */,
+				1805AE511B5391E300BEB024 /* BrandViewCell.m in Sources */,
 				18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */,
 				1837346B1B4D046400720BFE /* FashionPiazzaCell.m in Sources */,
 				183D6C231B4BC4BF00577577 /* FashionPiazzaViewController.m in Sources */,
 				9695F0A41B516AE000A4844C /* MASLayoutConstraint.m in Sources */,
 				18983B051B33D6C000C8286E /* MJRefreshConst.m in Sources */,
 				189839861B33C8CE00C8286E /* MKAnnotationView+WebCache.m in Sources */,
+				1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */,
 				9695F0A51B516AE000A4844C /* MASViewAttribute.m in Sources */,
 				9695F0741B51516500A4844C /* GTMBase64.m in Sources */,
 				1898399B1B33C8CE00C8286E /* UIImageView+AFNetworking.m in Sources */,
@@ -1300,6 +1360,7 @@
 				18983B081B33D6C000C8286E /* UIScrollView+MJExtension.m in Sources */,
 				9695F07E1B51516500A4844C /* UIColor+Expand.m in Sources */,
 				1837347E1B4E1E1D00720BFE /* ConmetsCellTableViewCell.m in Sources */,
+				1805AE551B53A16000BEB024 /* OfferRewardControllerViewController.m in Sources */,
 				189839901B33C8CE00C8286E /* UIButton+WebCache.m in Sources */,
 				189838CF1B33C68C00C8286E /* UIColor+CustomColor.m in Sources */,
 				18983B071B33D6C000C8286E /* MJRefreshHeaderView.m in Sources */,
@@ -1313,6 +1374,7 @@
 				189839731B33C8CE00C8286E /* AFHTTPSessionManager.m in Sources */,
 				9695F0831B51516500A4844C /* UIView+TBasicTools.m in Sources */,
 				9695F0821B51516500A4844C /* UIView+Layer.m in Sources */,
+				1805AE5C1B53ADD500BEB024 /* NormolCollectionCell.m in Sources */,
 				189839A91B33CB0F00C8286E /* CustomImageScrollView.m in Sources */,
 				9695F0A71B516AE000A4844C /* NSArray+MASAdditions.m in Sources */,
 				189839971B33C8CE00C8286E /* AFNetworkActivityIndicatorManager.m in Sources */,

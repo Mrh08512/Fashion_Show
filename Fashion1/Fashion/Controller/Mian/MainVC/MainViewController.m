@@ -36,13 +36,14 @@
 
 }
 
+#pragma mark - privateFuction
+
 - (void)initData
 {
     _data = [[NSArray alloc] initWithObjects:@"夜店",@"夜跑",@"夜店",nil];
     
 }
 
-#pragma mark - privateFuction
 
 - (void)initContentView
 {
