@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "CustomTabBarView.h"
 #import "MainViewController.h"
+#import "BrandViewController.h"
 #import "BaseNavigationController.h"
 @interface RootViewController ()<UITabBarControllerDelegate,CustomTabBarViewDelegate>
 
@@ -23,18 +24,16 @@
 
     MainViewController *vc1 = [[MainViewController alloc] init];
     BaseNavigationController *nav1 = [[BaseNavigationController alloc] initWithRootViewController:vc1];
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    UIViewController *vc3 = [[UIViewController alloc] init];
+     UIViewController *vc2 = [[UIViewController alloc] init];
+    BrandViewController *vc5 = [[BrandViewController alloc] init];
+     BaseNavigationController *nav5 = [[BaseNavigationController alloc] initWithRootViewController:vc5];
+   
     
-    vc2.view.backgroundColor = [UIColor blackColor];
-    vc3.view.backgroundColor = [UIColor yellowColor];
-    vc1.title = @"1";
-    vc2.title = @"2";
-    vc3.title = @"3";
+   
     
     [viewControllersArray addObject:nav1];
     [viewControllersArray addObject:vc2];
-    [viewControllersArray addObject:vc3];
+    [viewControllersArray addObject:nav5];
     
     self.viewControllers = viewControllersArray;
     
