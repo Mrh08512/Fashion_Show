@@ -17,7 +17,6 @@
 - (void)awakeFromNib {
     // Initialization code
     
-    NSLog(@"123");
 }
 
 @end
