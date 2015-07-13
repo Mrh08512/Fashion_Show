@@ -60,8 +60,6 @@
 //        [rightButtonItem release];
         
         self.automaticallyAdjustsScrollViewInsets = YES;
-
-        
     }
     return self;
 }

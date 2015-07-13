@@ -10,6 +10,7 @@
 #import "PublishPhotoCollectionViewCell.h"
 #import "DrawViewController.h"
 #import "PlazaPublishInputView.h"
+#import "UIBarButtonItem+InitFunctions.h"
 
 @interface PlazaPublishViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -27,41 +28,55 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"活动发布";
+    [self setupNavigation];
     [self setupUI];
 }
 
 #pragma mark - setup
 
+- (void)setupNavigation {
+    
+    self.title = @"活动发布";
+    self.navigationItem.leftBarButtonItem = nil;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    UIBarButtonItem *rightItem = [UIBarButtonItem itemWithTarget:self action:@selector(rightItemTapped:) imageName:@"check2" highlightedImageName:@"check2"];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
 - (void)setupUI {
+    
+    UIImageView *bkView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    bkView.image = [UIImage imageNamed:@"广场背景"];
+    [self.view addSubview:bkView];
     
     UIScrollView *scrollView = [UIScrollView new];
     scrollView.width = SCREEN_WIDTH;
     scrollView.height = SCREEN_HIGHT;
+    scrollView.backgroundColor = [UIColor clearColor];
     scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 1000);
-    scrollView.backgroundColor = [UIColor orangeColor];
     scrollView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
     scrollView.contentOffset = CGPointMake(0, -64);
+    scrollView.showsVerticalScrollIndicator = NO;
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
     
     UIImageView *largePhotoImageView = [UIImageView new];
     largePhotoImageView.width = _scrollView.width;
     largePhotoImageView.height = 200 * TProportion();
-    largePhotoImageView.backgroundColor = [UIColor redColor];
     [_scrollView addSubview:largePhotoImageView];
     self.largePhotoImageView = largePhotoImageView;
     
     UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
-    layout.minimumLineSpacing = 10;
-    layout.minimumInteritemSpacing = 10;
-    layout.itemSize = CGSizeMake(110, 80);
+    layout.minimumLineSpacing = 7;
+    layout.minimumInteritemSpacing = 7;
+    layout.itemSize = CGSizeMake(102, 80);
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     UICollectionView *subPhotosCollectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(largePhotoImageView.frame), SCREEN_WIDTH, 90) collectionViewLayout:layout];
     [subPhotosCollectionView registerNib:[UINib nibWithNibName:@"PublishPhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PublishPhotoCollectionViewCell"];
     subPhotosCollectionView.contentSize = CGSizeMake(SCREEN_WIDTH * 2, 80);
-    subPhotosCollectionView.backgroundColor = [UIColor blueColor];
+    subPhotosCollectionView.backgroundColor = [UIColor clearColor];
     subPhotosCollectionView.delegate = self;
     subPhotosCollectionView.dataSource = self;
     [_scrollView addSubview:subPhotosCollectionView];
@@ -70,11 +85,20 @@
     PlazaPublishInputView *inputView = [PlazaPublishInputView inputView];
     inputView.y = CGRectGetMaxY(subPhotosCollectionView.frame);
     inputView.width = SCREEN_WIDTH;
-    inputView.height = 200;
+    inputView.height = 370;
     [_scrollView addSubview:inputView];
+    
+    _scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, CGRectGetMaxY(inputView.frame) + 10);
 }
 
 #pragma mark - Private methods
+
+#pragma mark - Navigation Item Tapped
+
+- (void)rightItemTapped:(UIButton *)sender {
+    
+    
+}
 
 #pragma mark - UICollecitonViewDataSource methods
 
@@ -104,6 +128,7 @@
         cell.imageView.image = [UIImage imageNamed:@"add_image"];
     } else {
         
+        self.largePhotoImageView.image = self.photos[0];
         cell.imageView.image = self.photos[indexPath.row + 1];
     }
     

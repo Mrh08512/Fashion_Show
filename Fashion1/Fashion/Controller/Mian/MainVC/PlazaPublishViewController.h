@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 MRH-MAC. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "ModelViewController.h"
 
-@interface PlazaPublishViewController : BaseViewController
+@interface PlazaPublishViewController : ModelViewController
 
 @end
