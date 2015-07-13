@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1805AE411B53813400BEB024 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE401B53813400BEB024 /* RankViewController.m */; };
+		1805AE461B5382D100BEB024 /* RankViewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE441B5382D100BEB024 /* RankViewViewCell.m */; };
+		1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE451B5382D100BEB024 /* RankViewViewCell.xib */; };
 		1837346B1B4D046400720BFE /* FashionPiazzaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734601B4D046400720BFE /* FashionPiazzaCell.m */; };
 		1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183734611B4D046400720BFE /* FashionPiazzaCell.xib */; };
 		1837346D1B4D046400720BFE /* MainDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734631B4D046400720BFE /* MainDownCell.m */; };
@@ -146,6 +149,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1805AE3F1B53813400BEB024 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		1805AE401B53813400BEB024 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		1805AE431B5382D100BEB024 /* RankViewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewViewCell.h; sourceTree = "<group>"; };
+		1805AE441B5382D100BEB024 /* RankViewViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewViewCell.m; sourceTree = "<group>"; };
+		1805AE451B5382D100BEB024 /* RankViewViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewViewCell.xib; sourceTree = "<group>"; };
 		1837345F1B4D046400720BFE /* FashionPiazzaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionPiazzaCell.h; sourceTree = "<group>"; };
 		183734601B4D046400720BFE /* FashionPiazzaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionPiazzaCell.m; sourceTree = "<group>"; };
 		183734611B4D046400720BFE /* FashionPiazzaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FashionPiazzaCell.xib; sourceTree = "<group>"; };
@@ -410,6 +418,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1805AE421B5382B200BEB024 /* RankView */ = {
+			isa = PBXGroup;
+			children = (
+				1805AE431B5382D100BEB024 /* RankViewViewCell.h */,
+				1805AE441B5382D100BEB024 /* RankViewViewCell.m */,
+				1805AE451B5382D100BEB024 /* RankViewViewCell.xib */,
+			);
+			name = RankView;
+			sourceTree = "<group>";
+		};
 		1837345D1B4D046400720BFE /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,6 +438,7 @@
 		1837345E1B4D046400720BFE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1805AE421B5382B200BEB024 /* RankView */,
 				183734741B4D047D00720BFE /* DetailView */,
 				183734731B4D047700720BFE /* MainView */,
 			);
@@ -492,6 +511,8 @@
 				9695F0411B5144C100A4844C /* PlazaPublishViewController.m */,
 				96834C4D1B528F7A00C7344D /* DrawViewController.h */,
 				96834C4E1B528F7A00C7344D /* DrawViewController.m */,
+				1805AE3F1B53813400BEB024 /* RankViewController.h */,
+				1805AE401B53813400BEB024 /* RankViewController.m */,
 			);
 			path = MainVC;
 			sourceTree = "<group>";
@@ -1174,6 +1195,7 @@
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
 				96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */,
+				1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1217,6 +1239,7 @@
 				9695F0841B51516500A4844C /* TScrollView.m in Sources */,
 				189839891B33C8CE00C8286E /* SDWebImageCompat.m in Sources */,
 				189839941B33C8CE00C8286E /* UIImageView+HighlightedWebCache.m in Sources */,
+				1805AE411B53813400BEB024 /* RankViewController.m in Sources */,
 				18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */,
 				1898398F1B33C8CE00C8286E /* SDWebImagePrefetcher.m in Sources */,
 				1898398C1B33C8CE00C8286E /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1231,6 +1254,7 @@
 				1898397B1B33C8CE00C8286E /* MBProgressHUD+Add.m in Sources */,
 				9695F0791B51516500A4844C /* TTools.m in Sources */,
 				189839AA1B33CB0F00C8286E /* CustomTouchView.m in Sources */,
+				1805AE461B5382D100BEB024 /* RankViewViewCell.m in Sources */,
 				189839A81B33CB0F00C8286E /* CustomClipImageViewController.m in Sources */,
 				183734711B4D046400720BFE /* MainRankingCell.m in Sources */,
 				189838BD1B33C68C00C8286E /* AppDelegate.m in Sources */,

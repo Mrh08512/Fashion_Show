@@ -11,7 +11,7 @@
 #import "MainRankingCell.h"
 #import "MainDownCell.h"
 #import "FashionPiazzaViewController.h"
-
+#import "RankViewController.h"
 #define  kHeardCell1 @"MainHeardViewCell"
 #define  kHeardCellRanking @"MainRankingCell"
 #define  kHeardCellDown @"MainDownCell"
@@ -84,13 +84,16 @@
             // 拼吧
             cell.pullzeBlock        = ^()
             {
-
+                
             };
 
             // 排序
             cell.rankingBlock       = ^()
             {
-
+                RankViewController *rank = [[RankViewController alloc] init];
+                rank.hidesBottomBarWhenPushed = YES;
+                [self.navigationController pushViewController:rank animated:YES];
+                
             };
             
             return cell;
