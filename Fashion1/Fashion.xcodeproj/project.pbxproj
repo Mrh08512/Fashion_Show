@@ -114,6 +114,7 @@
 		96834C4F1B528F7A00C7344D /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C4E1B528F7A00C7344D /* DrawViewController.m */; };
 		96834C521B52A0B600C7344D /* PlazaPublishInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C511B52A0B600C7344D /* PlazaPublishInputView.m */; };
 		96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C531B52A0CD00C7344D /* PlazaPublishInputView.xib */; };
+		96834C5D1B53B0F600C7344D /* ShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */; };
 		9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0411B5144C100A4844C /* PlazaPublishViewController.m */; };
 		9695F0741B51516500A4844C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0471B51516500A4844C /* GTMBase64.m */; };
 		9695F0751B51516500A4844C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F04A1B51516500A4844C /* Reachability.m */; };
@@ -349,6 +350,8 @@
 		96834C501B52A0B600C7344D /* PlazaPublishInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishInputView.h; sourceTree = "<group>"; };
 		96834C511B52A0B600C7344D /* PlazaPublishInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishInputView.m; sourceTree = "<group>"; };
 		96834C531B52A0CD00C7344D /* PlazaPublishInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlazaPublishInputView.xib; sourceTree = "<group>"; };
+		96834C5A1B53B0F600C7344D /* ShowPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoViewController.h; sourceTree = "<group>"; };
+		96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoViewController.m; sourceTree = "<group>"; };
 		9695F0401B5144C100A4844C /* PlazaPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishViewController.h; sourceTree = "<group>"; };
 		9695F0411B5144C100A4844C /* PlazaPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishViewController.m; sourceTree = "<group>"; };
 		9695F0461B51516500A4844C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -790,6 +793,7 @@
 		189838F01B33C68C00C8286E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96834C551B53AFBC00C7344D /* ShowPhoto */,
 				1805AE481B53901000BEB024 /* Brand */,
 				96834C421B52530D00C7344D /* Base */,
 				183D6C051B4B74B600577577 /* Mian */,
@@ -984,6 +988,31 @@
 				96834C441B52530D00C7344D /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		96834C551B53AFBC00C7344D /* ShowPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				96834C591B53B0F600C7344D /* Controller */,
+				96834C5C1B53B0F600C7344D /* View */,
+			);
+			path = ShowPhoto;
+			sourceTree = "<group>";
+		};
+		96834C591B53B0F600C7344D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96834C5A1B53B0F600C7344D /* ShowPhotoViewController.h */,
+				96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96834C5C1B53B0F600C7344D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9695F0431B51516500A4844C /* TKit */ = {
@@ -1285,6 +1314,7 @@
 				18983B041B33D6C000C8286E /* MJRefreshBaseView.m in Sources */,
 				9695F0A21B516AE000A4844C /* MASConstraint.m in Sources */,
 				189839761B33C8CE00C8286E /* AFSecurityPolicy.m in Sources */,
+				96834C5D1B53B0F600C7344D /* ShowPhotoViewController.m in Sources */,
 				183D6C0E1B4B74F400577577 /* RootViewController.m in Sources */,
 				18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */,
 				1898399E1B33C8CE00C8286E /* UIWebView+AFNetworking.m in Sources */,
