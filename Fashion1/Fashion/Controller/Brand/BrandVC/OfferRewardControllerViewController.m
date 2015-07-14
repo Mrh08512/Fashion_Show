@@ -8,13 +8,16 @@
 
 #import "OfferRewardControllerViewController.h"
 #import "WaterFlowLayout.h"
+#import "NormolCollectionCell.h"
+#import "TitleBar.h"
+#import "BrandHearViewCell.h"
 @interface OfferRewardControllerViewController ()
 
 @property (nonatomic , strong) UICollectionView *contentView;
 
 @end
 
-@interface OfferRewardControllerViewController ()<UICollecitonViewDelegateWaterFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate>
+@interface OfferRewardControllerViewController ()<UICollecitonViewDelegateWaterFlowLayout,UICollectionViewDataSourceWaterFlowLayout,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @end
 
@@ -22,9 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
+
     [self initContentView];
     
     
@@ -33,12 +34,26 @@
 
 - (void)initContentView
 {
-    WaterFlowLayout *flowLayout = [[WaterFlowLayout alloc] init];
-    flowLayout.startY = 200;
+    self.navigationItem.leftBarButtonItem = nil;
+    WaterFlowLayout *flowLayout  = [[WaterFlowLayout alloc] init];
+    flowLayout.flowdatasource = self;
+    flowLayout.flowdelegate    = self;
+    flowLayout.startY            = 370;
+    _contentView                 = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
+    _contentView.delegate        = self;
+    _contentView.dataSource      = self;
+    [_contentView registerNib:[UINib nibWithNibName:@"NormolCollectionCell" bundle:nil] forCellWithReuseIdentifier:@"NormolCollectionCell"];
+    [self.view addSubview:_contentView];
     
-    _contentView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:flowLayout];
-    _contentView.delegate = self;
-    _contentView.dataSource = self;
+     NSArray *shopInfoCellArray = [[NSBundle mainBundle] loadNibNamed:@"BrandHearViewCell" owner:self options:nil];
+    
+    
+    BrandHearViewCell*hearView             = [shopInfoCellArray lastObject];
+    hearView.frame = CGRectMake(0, 0, self.view.bounds.size.width, flowLayout.startY);
+    hearView.titleBarView.titles = @[@"首页",@"已提交",@"入选",@"已获奖"];
+    
+    hearView.backgroundColor    = [UIColor redColor];
+    [self.contentView addSubview:hearView];
 
 }
 
@@ -51,16 +66,16 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return   50;
+    return   10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    ColllectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CELL_ID" forIndexPath:indexPath];
-//    
-//    [cell.imageView loadImage:[self.imageUrls objectAtIndex:(indexPath.row + indexPath.section) % 5]];
-//    
-    return nil;
+    NormolCollectionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"NormolCollectionCell" forIndexPath:indexPath];
+//
+    cell.bkImage.image = [UIImage imageNamed:nil];
+//
+    return cell;
 }
 
 
@@ -78,7 +93,7 @@
 {
     
 
-    return 50;
+    return 10;
     
 //    NSNumber *height = _itemFrams[index %7];
 //    return [height floatValue];

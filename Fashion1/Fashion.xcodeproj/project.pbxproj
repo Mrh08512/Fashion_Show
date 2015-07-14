@@ -17,6 +17,9 @@
 		1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE571B53AC2500BEB024 /* WaterFlowLayout.m */; };
 		1805AE5C1B53ADD500BEB024 /* NormolCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */; };
 		1805AE5D1B53ADD500BEB024 /* NormolCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */; };
+		1805AE611B53B41D00BEB024 /* BrandHearViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE5F1B53B41D00BEB024 /* BrandHearViewCell.m */; };
+		1805AE621B53B41D00BEB024 /* BrandHearViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1805AE601B53B41D00BEB024 /* BrandHearViewCell.xib */; };
+		1805AE651B53BB7E00BEB024 /* TitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1805AE641B53BB7E00BEB024 /* TitleBar.m */; };
 		1837346B1B4D046400720BFE /* FashionPiazzaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734601B4D046400720BFE /* FashionPiazzaCell.m */; };
 		1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183734611B4D046400720BFE /* FashionPiazzaCell.xib */; };
 		1837346D1B4D046400720BFE /* MainDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 183734631B4D046400720BFE /* MainDownCell.m */; };
@@ -173,6 +176,11 @@
 		1805AE591B53ADD500BEB024 /* NormolCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormolCollectionCell.h; sourceTree = "<group>"; };
 		1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormolCollectionCell.m; sourceTree = "<group>"; };
 		1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NormolCollectionCell.xib; sourceTree = "<group>"; };
+		1805AE5E1B53B41D00BEB024 /* BrandHearViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandHearViewCell.h; sourceTree = "<group>"; };
+		1805AE5F1B53B41D00BEB024 /* BrandHearViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandHearViewCell.m; sourceTree = "<group>"; };
+		1805AE601B53B41D00BEB024 /* BrandHearViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrandHearViewCell.xib; sourceTree = "<group>"; };
+		1805AE631B53BB7E00BEB024 /* TitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleBar.h; sourceTree = "<group>"; };
+		1805AE641B53BB7E00BEB024 /* TitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleBar.m; sourceTree = "<group>"; };
 		1837345F1B4D046400720BFE /* FashionPiazzaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionPiazzaCell.h; sourceTree = "<group>"; };
 		183734601B4D046400720BFE /* FashionPiazzaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionPiazzaCell.m; sourceTree = "<group>"; };
 		183734611B4D046400720BFE /* FashionPiazzaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FashionPiazzaCell.xib; sourceTree = "<group>"; };
@@ -476,6 +484,11 @@
 				1805AE591B53ADD500BEB024 /* NormolCollectionCell.h */,
 				1805AE5A1B53ADD500BEB024 /* NormolCollectionCell.m */,
 				1805AE5B1B53ADD500BEB024 /* NormolCollectionCell.xib */,
+				1805AE5E1B53B41D00BEB024 /* BrandHearViewCell.h */,
+				1805AE5F1B53B41D00BEB024 /* BrandHearViewCell.m */,
+				1805AE601B53B41D00BEB024 /* BrandHearViewCell.xib */,
+				1805AE631B53BB7E00BEB024 /* TitleBar.h */,
+				1805AE641B53BB7E00BEB024 /* TitleBar.m */,
 			);
 			path = BrandView;
 			sourceTree = "<group>";
@@ -1239,6 +1252,7 @@
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
+				1805AE621B53B41D00BEB024 /* BrandHearViewCell.xib in Resources */,
 				189838C21B33C68C00C8286E /* Fashion-Prefix.pch in Resources */,
 				189838EF1B33C68C00C8286E /* View in Resources */,
 				189838C61B33C68C00C8286E /* CustomWidgets in Resources */,
@@ -1330,6 +1344,7 @@
 				1837346B1B4D046400720BFE /* FashionPiazzaCell.m in Sources */,
 				183D6C231B4BC4BF00577577 /* FashionPiazzaViewController.m in Sources */,
 				9695F0A41B516AE000A4844C /* MASLayoutConstraint.m in Sources */,
+				1805AE651B53BB7E00BEB024 /* TitleBar.m in Sources */,
 				18983B051B33D6C000C8286E /* MJRefreshConst.m in Sources */,
 				189839861B33C8CE00C8286E /* MKAnnotationView+WebCache.m in Sources */,
 				1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */,
@@ -1337,6 +1352,7 @@
 				9695F0741B51516500A4844C /* GTMBase64.m in Sources */,
 				1898399B1B33C8CE00C8286E /* UIImageView+AFNetworking.m in Sources */,
 				9695F0781B51516500A4844C /* NSMutableDictionary+BasicTools.m in Sources */,
+				1805AE611B53B41D00BEB024 /* BrandHearViewCell.m in Sources */,
 				96834C451B52530D00C7344D /* BaseViewController.m in Sources */,
 				189839791B33C8CE00C8286E /* AFURLResponseSerialization.m in Sources */,
 				9695F0A61B516AE000A4844C /* MASViewConstraint.m in Sources */,

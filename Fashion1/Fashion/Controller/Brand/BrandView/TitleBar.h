@@ -1,5 +1,5 @@
 //
-//  NormolCollectionCell.h
+//  TitleBar.h
 //  Fashion
 //
 //  Created by MRH-MAC on 15/7/13.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NormolCollectionCell : UICollectionViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *bkImage;
+@interface TitleBar : UIView
+
+@property (nonatomic, strong) NSArray *titles;
 
 @end
