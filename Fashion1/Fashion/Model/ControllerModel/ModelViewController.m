@@ -60,8 +60,7 @@
 //        [rightButtonItem release];
         
         self.automaticallyAdjustsScrollViewInsets = YES;
-
-        
+        self.view.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }

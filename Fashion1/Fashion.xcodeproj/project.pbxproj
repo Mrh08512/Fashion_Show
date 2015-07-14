@@ -117,6 +117,14 @@
 		96834C4F1B528F7A00C7344D /* DrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C4E1B528F7A00C7344D /* DrawViewController.m */; };
 		96834C521B52A0B600C7344D /* PlazaPublishInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C511B52A0B600C7344D /* PlazaPublishInputView.m */; };
 		96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C531B52A0CD00C7344D /* PlazaPublishInputView.xib */; };
+		96834C5D1B53B0F600C7344D /* ShowPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */; };
+		96834C651B53BD1500C7344D /* ShowPhotoListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C641B53BD1500C7344D /* ShowPhotoListView.m */; };
+		96834C671B53BD2300C7344D /* ShowPhotoListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C661B53BD2300C7344D /* ShowPhotoListView.xib */; };
+		96834C6E1B53CE1700C7344D /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C6D1B53CE1700C7344D /* ActivityViewController.m */; };
+		96834C751B53CF1200C7344D /* AddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C741B53CF1200C7344D /* AddressViewController.m */; };
+		96834C781B53CF2400C7344D /* MomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C771B53CF2400C7344D /* MomentViewController.m */; };
+		96834C7B1B53CF3700C7344D /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C7A1B53CF3700C7344D /* RewardViewController.m */; };
+		96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C7D1B53D47900C7344D /* BackBaseViewController.m */; };
 		9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0411B5144C100A4844C /* PlazaPublishViewController.m */; };
 		9695F0741B51516500A4844C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0471B51516500A4844C /* GTMBase64.m */; };
 		9695F0751B51516500A4844C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F04A1B51516500A4844C /* Reachability.m */; };
@@ -357,6 +365,21 @@
 		96834C501B52A0B600C7344D /* PlazaPublishInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishInputView.h; sourceTree = "<group>"; };
 		96834C511B52A0B600C7344D /* PlazaPublishInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishInputView.m; sourceTree = "<group>"; };
 		96834C531B52A0CD00C7344D /* PlazaPublishInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlazaPublishInputView.xib; sourceTree = "<group>"; };
+		96834C5A1B53B0F600C7344D /* ShowPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoViewController.h; sourceTree = "<group>"; };
+		96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoViewController.m; sourceTree = "<group>"; };
+		96834C631B53BD1500C7344D /* ShowPhotoListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPhotoListView.h; sourceTree = "<group>"; };
+		96834C641B53BD1500C7344D /* ShowPhotoListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPhotoListView.m; sourceTree = "<group>"; };
+		96834C661B53BD2300C7344D /* ShowPhotoListView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowPhotoListView.xib; sourceTree = "<group>"; };
+		96834C6C1B53CE1700C7344D /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		96834C6D1B53CE1700C7344D /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		96834C731B53CF1200C7344D /* AddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressViewController.h; sourceTree = "<group>"; };
+		96834C741B53CF1200C7344D /* AddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressViewController.m; sourceTree = "<group>"; };
+		96834C761B53CF2400C7344D /* MomentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MomentViewController.h; sourceTree = "<group>"; };
+		96834C771B53CF2400C7344D /* MomentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MomentViewController.m; sourceTree = "<group>"; };
+		96834C791B53CF3700C7344D /* RewardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardViewController.h; sourceTree = "<group>"; };
+		96834C7A1B53CF3700C7344D /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
+		96834C7C1B53D47900C7344D /* BackBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackBaseViewController.h; path = Model/ControllerModel/BackBaseViewController.h; sourceTree = "<group>"; };
+		96834C7D1B53D47900C7344D /* BackBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackBaseViewController.m; path = Model/ControllerModel/BackBaseViewController.m; sourceTree = "<group>"; };
 		9695F0401B5144C100A4844C /* PlazaPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishViewController.h; sourceTree = "<group>"; };
 		9695F0411B5144C100A4844C /* PlazaPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishViewController.m; sourceTree = "<group>"; };
 		9695F0461B51516500A4844C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -776,6 +799,8 @@
 				18983AAD1B33D06300C8286E /* BaseNavigationController.m */,
 				189838E71B33C68C00C8286E /* ModelViewController.h */,
 				189838E81B33C68C00C8286E /* ModelViewController.m */,
+				96834C7C1B53D47900C7344D /* BackBaseViewController.h */,
+				96834C7D1B53D47900C7344D /* BackBaseViewController.m */,
 			);
 			name = ControllerModel;
 			sourceTree = "<group>";
@@ -803,6 +828,7 @@
 		189838F01B33C68C00C8286E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96834C551B53AFBC00C7344D /* ShowPhoto */,
 				1805AE481B53901000BEB024 /* Brand */,
 				96834C421B52530D00C7344D /* Base */,
 				183D6C051B4B74B600577577 /* Mian */,
@@ -997,6 +1023,106 @@
 				96834C441B52530D00C7344D /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		96834C551B53AFBC00C7344D /* ShowPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				96834C591B53B0F600C7344D /* Controller */,
+				96834C5C1B53B0F600C7344D /* View */,
+			);
+			path = ShowPhoto;
+			sourceTree = "<group>";
+		};
+		96834C591B53B0F600C7344D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96834C5A1B53B0F600C7344D /* ShowPhotoViewController.h */,
+				96834C5B1B53B0F600C7344D /* ShowPhotoViewController.m */,
+				96834C681B53CD4100C7344D /* Activity */,
+				96834C691B53CD4100C7344D /* Address */,
+				96834C6A1B53CD4100C7344D /* Moment */,
+				96834C6B1B53CD4100C7344D /* Reward */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96834C5C1B53B0F600C7344D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96834C631B53BD1500C7344D /* ShowPhotoListView.h */,
+				96834C641B53BD1500C7344D /* ShowPhotoListView.m */,
+				96834C661B53BD2300C7344D /* ShowPhotoListView.xib */,
+				96834C6F1B53CED500C7344D /* Activity */,
+				96834C701B53CED500C7344D /* Address */,
+				96834C711B53CED500C7344D /* Moment */,
+				96834C721B53CED500C7344D /* Reward */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96834C681B53CD4100C7344D /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				96834C6C1B53CE1700C7344D /* ActivityViewController.h */,
+				96834C6D1B53CE1700C7344D /* ActivityViewController.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		96834C691B53CD4100C7344D /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				96834C731B53CF1200C7344D /* AddressViewController.h */,
+				96834C741B53CF1200C7344D /* AddressViewController.m */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		96834C6A1B53CD4100C7344D /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+				96834C761B53CF2400C7344D /* MomentViewController.h */,
+				96834C771B53CF2400C7344D /* MomentViewController.m */,
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		96834C6B1B53CD4100C7344D /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				96834C791B53CF3700C7344D /* RewardViewController.h */,
+				96834C7A1B53CF3700C7344D /* RewardViewController.m */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		96834C6F1B53CED500C7344D /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		96834C701B53CED500C7344D /* Address */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		96834C711B53CED500C7344D /* Moment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Moment;
+			sourceTree = "<group>";
+		};
+		96834C721B53CED500C7344D /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Reward;
 			sourceTree = "<group>";
 		};
 		9695F0431B51516500A4844C /* TKit */ = {
@@ -1266,6 +1392,7 @@
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
 				96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */,
+				96834C671B53BD2300C7344D /* ShowPhotoListView.xib in Resources */,
 				1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1299,6 +1426,7 @@
 				18983B041B33D6C000C8286E /* MJRefreshBaseView.m in Sources */,
 				9695F0A21B516AE000A4844C /* MASConstraint.m in Sources */,
 				189839761B33C8CE00C8286E /* AFSecurityPolicy.m in Sources */,
+				96834C5D1B53B0F600C7344D /* ShowPhotoViewController.m in Sources */,
 				183D6C0E1B4B74F400577577 /* RootViewController.m in Sources */,
 				18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */,
 				1898399E1B33C8CE00C8286E /* UIWebView+AFNetworking.m in Sources */,
@@ -1328,6 +1456,7 @@
 				189839AA1B33CB0F00C8286E /* CustomTouchView.m in Sources */,
 				1805AE461B5382D100BEB024 /* RankViewViewCell.m in Sources */,
 				189839A81B33CB0F00C8286E /* CustomClipImageViewController.m in Sources */,
+				96834C751B53CF1200C7344D /* AddressViewController.m in Sources */,
 				183734711B4D046400720BFE /* MainRankingCell.m in Sources */,
 				189838BD1B33C68C00C8286E /* AppDelegate.m in Sources */,
 				1837347A1B4E1C9D00720BFE /* CommentsView.m in Sources */,
@@ -1356,6 +1485,7 @@
 				96834C451B52530D00C7344D /* BaseViewController.m in Sources */,
 				189839791B33C8CE00C8286E /* AFURLResponseSerialization.m in Sources */,
 				9695F0A61B516AE000A4844C /* MASViewConstraint.m in Sources */,
+				96834C781B53CF2400C7344D /* MomentViewController.m in Sources */,
 				9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */,
 				9695F07A1B51516500A4844C /* UIActionSheet+Blocks.m in Sources */,
 				1898397D1B33C8CE00C8286E /* MBProgressHUD.m in Sources */,
@@ -1369,6 +1499,8 @@
 				96834C4F1B528F7A00C7344D /* DrawViewController.m in Sources */,
 				1898399A1B33C8CE00C8286E /* UIButton+AFNetworking.m in Sources */,
 				1898399D1B33C8CE00C8286E /* UIRefreshControl+AFNetworking.m in Sources */,
+				96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */,
+				96834C6E1B53CE1700C7344D /* ActivityViewController.m in Sources */,
 				189839AB1B33CB0F00C8286E /* UIImage+FixOrientation.m in Sources */,
 				189839931B33C8CE00C8286E /* UIImage+WebP.m in Sources */,
 				183734851B4E65C900720BFE /* ImageButton.m in Sources */,
@@ -1381,11 +1513,13 @@
 				189838CF1B33C68C00C8286E /* UIColor+CustomColor.m in Sources */,
 				18983B071B33D6C000C8286E /* MJRefreshHeaderView.m in Sources */,
 				9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */,
+				96834C651B53BD1500C7344D /* ShowPhotoListView.m in Sources */,
 				189839781B33C8CE00C8286E /* AFURLRequestSerialization.m in Sources */,
 				189839751B33C8CE00C8286E /* AFNetworkReachabilityManager.m in Sources */,
 				9695F07F1B51516500A4844C /* UIImage+TBasicTools.m in Sources */,
 				189838C01B33C68C00C8286E /* Fashion.xcdatamodeld in Sources */,
 				183D6C0A1B4B74EA00577577 /* MainViewController.m in Sources */,
+				96834C7B1B53CF3700C7344D /* RewardViewController.m in Sources */,
 				189839711B33C8CE00C8286E /* AFHTTPRequestOperation.m in Sources */,
 				189839731B33C8CE00C8286E /* AFHTTPSessionManager.m in Sources */,
 				9695F0831B51516500A4844C /* UIView+TBasicTools.m in Sources */,

@@ -11,7 +11,9 @@
 #import "MainViewController.h"
 #import "BrandViewController.h"
 #import "BaseNavigationController.h"
-@interface RootViewController ()<UITabBarControllerDelegate,CustomTabBarViewDelegate>
+#import "ShowPhotoViewController.h"
+
+@interface RootViewController () <UITabBarControllerDelegate, CustomTabBarViewDelegate>
 
 @end
 
@@ -24,22 +26,23 @@
 
     MainViewController *vc1 = [[MainViewController alloc] init];
     BaseNavigationController *nav1 = [[BaseNavigationController alloc] initWithRootViewController:vc1];
-     UIViewController *vc2 = [[UIViewController alloc] init];
+    UIViewController *vc2 = [[UIViewController alloc] init];
     BrandViewController *vc5 = [[BrandViewController alloc] init];
-     BaseNavigationController *nav5 = [[BaseNavigationController alloc] initWithRootViewController:vc5];
-   
+    BaseNavigationController *nav5 = [[BaseNavigationController alloc] initWithRootViewController:vc5];
+    ShowPhotoViewController *vc3 = [ShowPhotoViewController new];
+    BaseNavigationController *nav3 = [[BaseNavigationController alloc] initWithRootViewController:vc3];
     
-   
-    
+    [viewControllersArray addObject:nav3];
     [viewControllersArray addObject:nav1];
-    [viewControllersArray addObject:vc2];
     [viewControllersArray addObject:nav5];
+    [viewControllersArray addObject:vc2];
     
     self.viewControllers = viewControllersArray;
     
-    UITabBarItem *mainItem  = [self.tabBar.items objectAtIndex:0];
-    UITabBarItem *orderItem = [self.tabBar.items objectAtIndex:1];
-    UITabBarItem *cartItem  = [self.tabBar.items objectAtIndex:2];
+    UITabBarItem *showPhotoItem  = [self.tabBar.items objectAtIndex:0];
+    UITabBarItem *mainItem  = [self.tabBar.items objectAtIndex:1];
+    UITabBarItem *orderItem = [self.tabBar.items objectAtIndex:2];
+    UITabBarItem *cartItem  = [self.tabBar.items objectAtIndex:3];
     
     [mainItem setImage:[[UIImage imageNamed:@"icon_tabbar_main_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [mainItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_main_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
@@ -52,6 +55,8 @@
     [cartItem setImage:[[UIImage imageNamed:@"icon_tabbar_urgent_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     [cartItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_urgent_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 
+    [showPhotoItem setImage:[[UIImage imageNamed:@"icon_tabbar_urgent_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [showPhotoItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_urgent_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 
     //
 //    [self configCustomTar];
