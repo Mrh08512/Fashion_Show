@@ -122,6 +122,11 @@
 		96834C781B53CF2400C7344D /* MomentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C771B53CF2400C7344D /* MomentViewController.m */; };
 		96834C7B1B53CF3700C7344D /* RewardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C7A1B53CF3700C7344D /* RewardViewController.m */; };
 		96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C7D1B53D47900C7344D /* BackBaseViewController.m */; };
+		96834C811B54D4F200C7344D /* ActivityListHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C801B54D4F200C7344D /* ActivityListHeadView.m */; };
+		96834C831B54D4FA00C7344D /* ActivityListHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C821B54D4FA00C7344D /* ActivityListHeadView.xib */; };
+		96834C8C1B54DC6D00C7344D /* ActivityListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C8A1B54DC6D00C7344D /* ActivityListTableViewCell.m */; };
+		96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C8B1B54DC6D00C7344D /* ActivityListTableViewCell.xib */; };
+		96834C901B55030000C7344D /* ActivityDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C8F1B55030000C7344D /* ActivityDetailViewController.m */; };
 		9695F0421B5144C100A4844C /* PlazaPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0411B5144C100A4844C /* PlazaPublishViewController.m */; };
 		9695F0741B51516500A4844C /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F0471B51516500A4844C /* GTMBase64.m */; };
 		9695F0751B51516500A4844C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F04A1B51516500A4844C /* Reachability.m */; };
@@ -372,6 +377,14 @@
 		96834C7A1B53CF3700C7344D /* RewardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardViewController.m; sourceTree = "<group>"; };
 		96834C7C1B53D47900C7344D /* BackBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BackBaseViewController.h; path = Model/ControllerModel/BackBaseViewController.h; sourceTree = "<group>"; };
 		96834C7D1B53D47900C7344D /* BackBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BackBaseViewController.m; path = Model/ControllerModel/BackBaseViewController.m; sourceTree = "<group>"; };
+		96834C7F1B54D4F200C7344D /* ActivityListHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListHeadView.h; sourceTree = "<group>"; };
+		96834C801B54D4F200C7344D /* ActivityListHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListHeadView.m; sourceTree = "<group>"; };
+		96834C821B54D4FA00C7344D /* ActivityListHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityListHeadView.xib; sourceTree = "<group>"; };
+		96834C891B54DC6D00C7344D /* ActivityListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityListTableViewCell.h; sourceTree = "<group>"; };
+		96834C8A1B54DC6D00C7344D /* ActivityListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityListTableViewCell.m; sourceTree = "<group>"; };
+		96834C8B1B54DC6D00C7344D /* ActivityListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityListTableViewCell.xib; sourceTree = "<group>"; };
+		96834C8E1B55030000C7344D /* ActivityDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailViewController.h; sourceTree = "<group>"; };
+		96834C8F1B55030000C7344D /* ActivityDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailViewController.m; sourceTree = "<group>"; };
 		9695F0401B5144C100A4844C /* PlazaPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlazaPublishViewController.h; sourceTree = "<group>"; };
 		9695F0411B5144C100A4844C /* PlazaPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlazaPublishViewController.m; sourceTree = "<group>"; };
 		9695F0461B51516500A4844C /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -1053,6 +1066,8 @@
 			children = (
 				96834C6C1B53CE1700C7344D /* ActivityViewController.h */,
 				96834C6D1B53CE1700C7344D /* ActivityViewController.m */,
+				96834C8E1B55030000C7344D /* ActivityDetailViewController.h */,
+				96834C8F1B55030000C7344D /* ActivityDetailViewController.m */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -1087,6 +1102,12 @@
 		96834C6F1B53CED500C7344D /* Activity */ = {
 			isa = PBXGroup;
 			children = (
+				96834C7F1B54D4F200C7344D /* ActivityListHeadView.h */,
+				96834C801B54D4F200C7344D /* ActivityListHeadView.m */,
+				96834C821B54D4FA00C7344D /* ActivityListHeadView.xib */,
+				96834C891B54DC6D00C7344D /* ActivityListTableViewCell.h */,
+				96834C8A1B54DC6D00C7344D /* ActivityListTableViewCell.m */,
+				96834C8B1B54DC6D00C7344D /* ActivityListTableViewCell.xib */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -1364,7 +1385,9 @@
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
+				96834C831B54D4FA00C7344D /* ActivityListHeadView.xib in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
+				96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */,
 				189838C21B33C68C00C8286E /* Fashion-Prefix.pch in Resources */,
 				189838EF1B33C68C00C8286E /* View in Resources */,
 				189838C61B33C68C00C8286E /* CustomWidgets in Resources */,
@@ -1421,6 +1444,7 @@
 				1805AE4D1B53909600BEB024 /* BrandViewController.m in Sources */,
 				189839881B33C8CE00C8286E /* SDImageCache.m in Sources */,
 				189839721B33C8CE00C8286E /* AFHTTPRequestOperationManager.m in Sources */,
+				96834C901B55030000C7344D /* ActivityDetailViewController.m in Sources */,
 				18983B061B33D6C000C8286E /* MJRefreshFooterView.m in Sources */,
 				9695F0841B51516500A4844C /* TScrollView.m in Sources */,
 				189839891B33C8CE00C8286E /* SDWebImageCompat.m in Sources */,
@@ -1439,6 +1463,7 @@
 				9695F0A81B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1898397B1B33C8CE00C8286E /* MBProgressHUD+Add.m in Sources */,
 				9695F0791B51516500A4844C /* TTools.m in Sources */,
+				96834C8C1B54DC6D00C7344D /* ActivityListTableViewCell.m in Sources */,
 				189839AA1B33CB0F00C8286E /* CustomTouchView.m in Sources */,
 				1805AE461B5382D100BEB024 /* RankViewViewCell.m in Sources */,
 				189839A81B33CB0F00C8286E /* CustomClipImageViewController.m in Sources */,
@@ -1510,6 +1535,7 @@
 				9695F0821B51516500A4844C /* UIView+Layer.m in Sources */,
 				1805AE5C1B53ADD500BEB024 /* NormolCollectionCell.m in Sources */,
 				189839A91B33CB0F00C8286E /* CustomImageScrollView.m in Sources */,
+				96834C811B54D4F200C7344D /* ActivityListHeadView.m in Sources */,
 				9695F0A71B516AE000A4844C /* NSArray+MASAdditions.m in Sources */,
 				189839971B33C8CE00C8286E /* AFNetworkActivityIndicatorManager.m in Sources */,
 				183734821B4E659A00720BFE /* CornersImageView.m in Sources */,
