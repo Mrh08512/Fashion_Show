@@ -1480,16 +1480,13 @@
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
-<<<<<<< HEAD
 				96834C831B54D4FA00C7344D /* ActivityListHeadView.xib in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
 				96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */,
-=======
 				18F7C55D1B54FCF900D90933 /* UserInfoCollectionCell.xib in Resources */,
 				18F7C57A1B55084600D90933 /* m3.jpg in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
 				1805AE621B53B41D00BEB024 /* BrandHearViewCell.xib in Resources */,
->>>>>>> 0f1ee34baf28af74214f46b19ed531d6a2dd6caa
 				189838C21B33C68C00C8286E /* Fashion-Prefix.pch in Resources */,
 				189838EF1B33C68C00C8286E /* View in Resources */,
 				18F7C57C1B55084600D90933 /* m5.jpg in Resources */,
