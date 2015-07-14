@@ -20,11 +20,10 @@
 {
     _titles = titles;
     if (!JudgeContainerCountIsNull(_titles)) {
-        CGFloat width = self.bounds.size.width / _titles.count;
+        CGFloat width = (SCREEN_WIDTH - 16) / _titles.count;
         CGFloat height = self.bounds.size.height;
         for (int i = 0; i < _titles.count; i++ ) {
             UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-            button.backgroundColor = [UIColor orangeColor];
             [button setTitleColor:[UIColor darkGrayColor] forState:UIControlStateSelected];
             [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             button.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -47,11 +46,20 @@
             
         }
         // downLine
-        UILabel *downLine = [[UILabel alloc] initWithFrame:CGRectMake(0, height - 1, self.bounds.size.width, 1)];
+        UILabel *downLine = [[UILabel alloc] initWithFrame:CGRectMake(0, height, SCREEN_WIDTH - 16, 1)];
         downLine.backgroundColor = [UIColor whiteColor];
         [self addSubview:downLine];
         
     }
+
+    
+    
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
 }
 
 

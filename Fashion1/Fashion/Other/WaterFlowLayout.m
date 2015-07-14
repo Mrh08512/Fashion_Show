@@ -51,7 +51,8 @@
     self.cellIndex = [NSMutableArray arrayWithCapacity:numberOfColumns];
     self.cellPosition = [NSMutableArray arrayWithCapacity:_cellCount];
     
-    padding = 5;
+    // 左右距离
+    padding = 2;
     cellWidth = (self.collectionView.frame.size.width - (numberOfColumns-1)*padding)/numberOfColumns;
     
     CGFloat minHeight = 0.f;

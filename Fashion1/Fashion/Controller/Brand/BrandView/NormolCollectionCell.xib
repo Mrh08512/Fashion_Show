@@ -14,13 +14,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="110" height="105"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RhB-sI-R12">
-                        <rect key="frame" x="0.0" y="0.0" width="110" height="105"/>
+                        <rect key="frame" x="0.0" y="2" width="110" height="103"/>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="RhB-sI-R12" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="J9U-Iy-oc4"/>
+                <constraint firstItem="RhB-sI-R12" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="J9U-Iy-oc4"/>
                 <constraint firstAttribute="bottom" secondItem="RhB-sI-R12" secondAttribute="bottom" id="Pri-Eu-nPe"/>
                 <constraint firstAttribute="trailing" secondItem="RhB-sI-R12" secondAttribute="trailing" id="acP-qK-mNW"/>
                 <constraint firstItem="RhB-sI-R12" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ovr-ti-AJj"/>

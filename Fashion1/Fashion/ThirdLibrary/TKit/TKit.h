@@ -14,3 +14,4 @@
 #import <Foundation/Foundation.h>
 #import "TTools.h"
 #import "TUIs.h"
+#import "NSString+ContentSize.h"

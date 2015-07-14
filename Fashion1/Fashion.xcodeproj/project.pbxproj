@@ -111,6 +111,8 @@
 		18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B021B33D6C000C8286E /* UIView+MJExtension.m */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
+		18F7C54E1B54C11600D90933 /* BrandDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C54D1B54C11600D90933 /* BrandDetailModel.m */; };
+		18F7C5511B54DCC500D90933 /* PopContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C5501B54DCC500D90933 /* PopContentView.m */; };
 		96834C451B52530D00C7344D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C441B52530D00C7344D /* BaseViewController.m */; };
 		96834C4B1B526F3A00C7344D /* PublishPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C491B526F3A00C7344D /* PublishPhotoCollectionViewCell.m */; };
 		96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C4A1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib */; };
@@ -355,6 +357,10 @@
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
 		18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarItem.m; sourceTree = "<group>"; };
+		18F7C54C1B54C11600D90933 /* BrandDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrandDetailModel.h; sourceTree = "<group>"; };
+		18F7C54D1B54C11600D90933 /* BrandDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrandDetailModel.m; sourceTree = "<group>"; };
+		18F7C54F1B54DCC500D90933 /* PopContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopContentView.h; sourceTree = "<group>"; };
+		18F7C5501B54DCC500D90933 /* PopContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopContentView.m; sourceTree = "<group>"; };
 		96834C431B52530D00C7344D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		96834C441B52530D00C7344D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		96834C481B526F3A00C7344D /* PublishPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishPhotoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -481,6 +487,7 @@
 		1805AE481B53901000BEB024 /* Brand */ = {
 			isa = PBXGroup;
 			children = (
+				18F7C54B1B54C0F400D90933 /* BrandModel */,
 				1805AE491B53904300BEB024 /* BrandVC */,
 				1805AE4A1B53904300BEB024 /* BrandView */,
 			);
@@ -512,6 +519,8 @@
 				1805AE601B53B41D00BEB024 /* BrandHearViewCell.xib */,
 				1805AE631B53BB7E00BEB024 /* TitleBar.h */,
 				1805AE641B53BB7E00BEB024 /* TitleBar.m */,
+				18F7C54F1B54DCC500D90933 /* PopContentView.h */,
+				18F7C5501B54DCC500D90933 /* PopContentView.m */,
 			);
 			path = BrandView;
 			sourceTree = "<group>";
@@ -1016,6 +1025,15 @@
 			path = CustomTabbarVie;
 			sourceTree = "<group>";
 		};
+		18F7C54B1B54C0F400D90933 /* BrandModel */ = {
+			isa = PBXGroup;
+			children = (
+				18F7C54C1B54C11600D90933 /* BrandDetailModel.h */,
+				18F7C54D1B54C11600D90933 /* BrandDetailModel.m */,
+			);
+			path = BrandModel;
+			sourceTree = "<group>";
+		};
 		96834C421B52530D00C7344D /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -1449,6 +1467,7 @@
 				189839871B33C8CE00C8286E /* NSData+ImageContentType.m in Sources */,
 				189838DB1B33C68C00C8286E /* NSString+StringManage.m in Sources */,
 				9695F0A31B516AE000A4844C /* MASConstraintMaker.m in Sources */,
+				18F7C5511B54DCC500D90933 /* PopContentView.m in Sources */,
 				1898398A1B33C8CE00C8286E /* SDWebImageDecoder.m in Sources */,
 				9695F0A81B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1898397B1B33C8CE00C8286E /* MBProgressHUD+Add.m in Sources */,
@@ -1507,6 +1526,7 @@
 				1837346F1B4D046400720BFE /* MainHeardViewCell.m in Sources */,
 				18983B081B33D6C000C8286E /* UIScrollView+MJExtension.m in Sources */,
 				9695F07E1B51516500A4844C /* UIColor+Expand.m in Sources */,
+				18F7C54E1B54C11600D90933 /* BrandDetailModel.m in Sources */,
 				1837347E1B4E1E1D00720BFE /* ConmetsCellTableViewCell.m in Sources */,
 				1805AE551B53A16000BEB024 /* OfferRewardControllerViewController.m in Sources */,
 				189839901B33C8CE00C8286E /* UIButton+WebCache.m in Sources */,
