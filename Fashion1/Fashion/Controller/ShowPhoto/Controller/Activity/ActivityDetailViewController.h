@@ -6,8 +6,8 @@
 //  Copyright (c) 2015 MRH-MAC. All rights reserved.
 //
 
-#import "ModelViewController.h"
+#import "BackBaseViewController.h"
 
-@interface ActivityDetailViewController : ModelViewController
+@interface ActivityDetailViewController : BackBaseViewController
 
 @end

@@ -175,6 +175,8 @@
 		9695F0A81B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09A1B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09C1B516AE000A4844C /* View+MASAdditions.m */; };
 		9695F0AA1B516AE000A4844C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09F1B516AE000A4844C /* ViewController+MASAdditions.m */; };
+		96C1CF881B55317600A69438 /* ActivityDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */; };
+		96C1CF8A1B55318300A69438 /* ActivityDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -495,6 +497,9 @@
 		9695F09D1B516AE000A4844C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		9695F09E1B516AE000A4844C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		9695F09F1B516AE000A4844C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		96C1CF861B55317600A69438 /* ActivityDetailHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailHeadView.h; sourceTree = "<group>"; };
+		96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailHeadView.m; sourceTree = "<group>"; };
+		96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailHeadView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1203,6 +1208,9 @@
 				96834C891B54DC6D00C7344D /* ActivityListTableViewCell.h */,
 				96834C8A1B54DC6D00C7344D /* ActivityListTableViewCell.m */,
 				96834C8B1B54DC6D00C7344D /* ActivityListTableViewCell.xib */,
+				96C1CF861B55317600A69438 /* ActivityDetailHeadView.h */,
+				96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */,
+				96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -1508,6 +1516,7 @@
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
 				96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */,
+				96C1CF8A1B55318300A69438 /* ActivityDetailHeadView.xib in Resources */,
 				96834C671B53BD2300C7344D /* ShowPhotoListView.xib in Resources */,
 				1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */,
 				18F7C57E1B55084600D90933 /* m7.jpg in Resources */,
@@ -1624,6 +1633,7 @@
 				96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */,
 				96834C6E1B53CE1700C7344D /* ActivityViewController.m in Sources */,
 				189839AB1B33CB0F00C8286E /* UIImage+FixOrientation.m in Sources */,
+				96C1CF881B55317600A69438 /* ActivityDetailHeadView.m in Sources */,
 				189839931B33C8CE00C8286E /* UIImage+WebP.m in Sources */,
 				183734851B4E65C900720BFE /* ImageButton.m in Sources */,
 				1837346F1B4D046400720BFE /* MainHeardViewCell.m in Sources */,
