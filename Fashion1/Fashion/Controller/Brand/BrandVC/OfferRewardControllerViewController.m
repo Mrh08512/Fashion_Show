@@ -13,8 +13,11 @@
 #import "BrandHearViewCell.h"
 #import "NSString+ContentSize.h"
 #import "BrandDetailModel.h"
+#import "ImageLibraryController.h"
 #import "PopContentView.h"
-@interface OfferRewardControllerViewController ()
+#import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
+@interface OfferRewardControllerViewController ()<UIActionSheetDelegate>
 
 @property (nonatomic , strong) UICollectionView *contentView;
 
@@ -83,8 +86,11 @@
         }];
 
     };
+    
     hearView.submitPhoto = ^
     {
+        UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照",@"从相册选择", nil];
+        [sheet showInView:self.view];
         
     };
     
@@ -131,7 +137,25 @@
 #pragma mark - UICollectionViewDelegate methods
 - (void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    NSLog(@"%d selected", indexPath.item);
+    NSMutableArray *photots = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < [_dataSource count] ; i++) {
+        MJPhoto *photo = [[MJPhoto alloc] init];
+        photo.image = _dataSource[i];
+        [photots addObject:photo];
+    }
+
+
+    
+    // 2.显示相册
+    MJPhotoBrowser *browser = [[MJPhotoBrowser alloc] init];
+    browser.photos = photots; // 设置所有的图片
+    browser.currentPhotoIndex = indexPath.row ; // 弹出相册时显示的第一张图片是？
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [browser show];
+    });
+
+    
 }
 
 #pragma mark-  UICollecitonViewDelegateWaterFlowLayout
@@ -142,34 +166,6 @@
     
     return (SCREEN_WIDTH/2 - 10) * proportion;
     
-//    NSNumber *height = _itemFrams[index %7];
-//    return [height floatValue];
-    
-    //    float height = 0;
-    //	switch (index  % 5) {
-    //		case 0:
-    //			height = 127;
-    //			break;
-    //		case 1:
-    //			height = 100;
-    //			break;
-    //		case 2:
-    //			height = 87;
-    //			break;
-    //		case 3:
-    //			height = 114;
-    //			break;
-    //		case 4:
-    //			height = 140;
-    //			break;
-    //		case 5:
-    //			height = 158;
-    //			break;
-    //		default:
-    //			break;
-    //	}
-    
-    //	return height;
 }
 
 
@@ -180,6 +176,53 @@
 
 }
 
+
+#pragma mark - UIActionSheetDelegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSUInteger sourceType = 0;
+    
+    // 判断是否支持相机
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        switch (buttonIndex) {
+            case 0:
+                // 相机
+                sourceType = UIImagePickerControllerSourceTypeCamera;
+                break;
+            case 1:
+                // 相册
+                sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                break;
+                
+            case 2:
+                return;
+                
+        }
+    }
+    else {
+        if (buttonIndex == 0 ) {
+            NSLog(@"您的设备不支持照相功能");
+            return;
+        } else if (buttonIndex == 1)
+        {
+            sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+        } else if (buttonIndex == 2)
+        {
+            return;
+        }
+    }
+    
+    
+    __weak OfferRewardControllerViewController *_mySelf = self;
+    ImageLibraryController *vc = [[ImageLibraryController alloc] initWithPickerType:sourceType andScale:1.3];
+    vc.imageBlock = ^(UIImage *image)
+    {
+        
+        
+    };
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 /*
 #pragma mark - Navigation
