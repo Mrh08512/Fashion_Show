@@ -8,6 +8,7 @@
 
 #import "ActivityDetailViewController.h"
 #import "ActivityDetailHeadView.h"
+#import "ActivityDetailBodyView.h"
 
 @interface ActivityDetailViewController ()
 
@@ -45,6 +46,12 @@
     headView.height = 200;
     headView.width = SCREEN_WIDTH;
     [scrollView addSubview:headView];
+    
+    ActivityDetailBodyView *bodyView = [ActivityDetailBodyView activityDetailBodyView];
+    bodyView.y = CGRectGetMaxY(headView.frame);
+    bodyView.height = 400;
+    bodyView.width = SCREEN_WIDTH;
+    [scrollView addSubview:bodyView];
 }
 
 @end

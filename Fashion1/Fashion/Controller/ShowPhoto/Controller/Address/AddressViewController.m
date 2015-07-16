@@ -8,7 +8,7 @@
 
 #import "AddressViewController.h"
 
-@interface AddressViewController ()
+@interface AddressViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -24,6 +24,25 @@
 - (void)setupNavigation {
     
     self.navigationItem.title = @"地点";
+}
+
+- (void)setupUI {
+    
+    UIView *headView = [UIView new];
+    headView.height = 200;
+    headView.width = SCREEN_WIDTH;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    return nil;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
 }
 
 @end
