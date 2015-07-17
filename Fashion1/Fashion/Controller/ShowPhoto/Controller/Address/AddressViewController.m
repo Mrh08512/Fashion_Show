@@ -10,6 +10,7 @@
 #import "AddressListTableViewCell.h"
 #import "AddressPublishViewController.h"
 #import "UIBarButtonItem+InitFunctions.h"
+#import "AddressDetailViewController.h"
 
 @interface AddressViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -88,8 +89,8 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    AddressPublishViewController *publishViewController = [AddressPublishViewController new];
-    [self.navigationController pushViewController:publishViewController animated:YES];
+    AddressDetailViewController *detailViewController = [AddressDetailViewController new];
+    [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
 @end

@@ -192,6 +192,7 @@
 		96D576931B57A64E0040A497 /* ActivityDetailBodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D576921B57A64E0040A497 /* ActivityDetailBodyView.xib */; };
 		96D576971B57E4500040A497 /* AddressListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D576951B57E4500040A497 /* AddressListTableViewCell.m */; };
 		96D576981B57E4500040A497 /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D576961B57E4500040A497 /* AddressListTableViewCell.xib */; };
+		96F0B5C01B58EFCE00F7C193 /* AddressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -542,6 +543,8 @@
 		96D576941B57E4500040A497 /* AddressListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListTableViewCell.h; sourceTree = "<group>"; };
 		96D576951B57E4500040A497 /* AddressListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListTableViewCell.m; sourceTree = "<group>"; };
 		96D576961B57E4500040A497 /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
+		96F0B5BE1B58EFCE00F7C193 /* AddressDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDetailViewController.h; sourceTree = "<group>"; };
+		96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1245,6 +1248,8 @@
 				96834C741B53CF1200C7344D /* AddressViewController.m */,
 				9621E0EC1B5814220079EAA0 /* AddressPublishViewController.h */,
 				9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */,
+				96F0B5BE1B58EFCE00F7C193 /* AddressDetailViewController.h */,
+				96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1657,6 +1662,7 @@
 				189838D31B33C68C00C8286E /* FunctionManageObject.m in Sources */,
 				1898398B1B33C8CE00C8286E /* SDWebImageDownloader.m in Sources */,
 				189839981B33C8CE00C8286E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				96F0B5C01B58EFCE00F7C193 /* AddressDetailViewController.m in Sources */,
 				189839871B33C8CE00C8286E /* NSData+ImageContentType.m in Sources */,
 				183440741B55EE7900117011 /* MJPhotoLoadingView.m in Sources */,
 				189838DB1B33C68C00C8286E /* NSString+StringManage.m in Sources */,
