@@ -31,8 +31,7 @@
 - (void)setupUI {
     
     ShowPhotoListView *listView = [ShowPhotoListView showPhotoList];
-    listView.bounds = self.view.bounds;
-    listView.x = 0;
+    listView.frame = self.view.bounds;
     [self.view addSubview:listView];
 }
 
