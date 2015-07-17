@@ -195,6 +195,8 @@
 		96D576971B57E4500040A497 /* AddressListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D576951B57E4500040A497 /* AddressListTableViewCell.m */; };
 		96D576981B57E4500040A497 /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D576961B57E4500040A497 /* AddressListTableViewCell.xib */; };
 		96F0B5C01B58EFCE00F7C193 /* AddressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */; };
+		96F0B5C41B58F3FE00F7C193 /* RewardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5C21B58F3FE00F7C193 /* RewardListTableViewCell.m */; };
+		96F0B5C51B58F3FE00F7C193 /* RewardListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F0B5C31B58F3FE00F7C193 /* RewardListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -550,6 +552,9 @@
 		96D576961B57E4500040A497 /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
 		96F0B5BE1B58EFCE00F7C193 /* AddressDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDetailViewController.h; sourceTree = "<group>"; };
 		96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDetailViewController.m; sourceTree = "<group>"; };
+		96F0B5C11B58F3FE00F7C193 /* RewardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardListTableViewCell.h; sourceTree = "<group>"; };
+		96F0B5C21B58F3FE00F7C193 /* RewardListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardListTableViewCell.m; sourceTree = "<group>"; };
+		96F0B5C31B58F3FE00F7C193 /* RewardListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1351,6 +1356,9 @@
 		96834C721B53CED500C7344D /* Reward */ = {
 			isa = PBXGroup;
 			children = (
+				96F0B5C11B58F3FE00F7C193 /* RewardListTableViewCell.h */,
+				96F0B5C21B58F3FE00F7C193 /* RewardListTableViewCell.m */,
+				96F0B5C31B58F3FE00F7C193 /* RewardListTableViewCell.xib */,
 			);
 			path = Reward;
 			sourceTree = "<group>";
@@ -1613,6 +1621,7 @@
 				96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */,
 				18F7C55D1B54FCF900D90933 /* UserInfoCollectionCell.xib in Resources */,
 				18F7C57A1B55084600D90933 /* m3.jpg in Resources */,
+				96F0B5C51B58F3FE00F7C193 /* RewardListTableViewCell.xib in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
 				1805AE621B53B41D00BEB024 /* BrandHearViewCell.xib in Resources */,
 				189838C21B33C68C00C8286E /* Fashion-Prefix.pch in Resources */,
@@ -1753,6 +1762,7 @@
 				96834C451B52530D00C7344D /* BaseViewController.m in Sources */,
 				189839791B33C8CE00C8286E /* AFURLResponseSerialization.m in Sources */,
 				96D576911B57A6450040A497 /* ActivityDetailBodyView.m in Sources */,
+				96F0B5C41B58F3FE00F7C193 /* RewardListTableViewCell.m in Sources */,
 				9695F0A61B516AE000A4844C /* MASViewConstraint.m in Sources */,
 				96834C781B53CF2400C7344D /* MomentViewController.m in Sources */,
 				9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */,
