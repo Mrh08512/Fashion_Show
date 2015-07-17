@@ -9,6 +9,7 @@
 #import "ActivityViewController.h"
 #import "ActivityListHeadView.h"
 #import "ActivityListTableViewCell.h"
+#import "ActivityDetailViewController.h"
 
 @interface ActivityViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -83,6 +84,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    ActivityDetailViewController *activityDetailViewController = [ActivityDetailViewController new];
+    [self.navigationController pushViewController:activityDetailViewController animated:YES];
 }
 
 @end

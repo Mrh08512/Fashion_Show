@@ -188,6 +188,12 @@
 		9695F0A81B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09A1B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09C1B516AE000A4844C /* View+MASAdditions.m */; };
 		9695F0AA1B516AE000A4844C /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695F09F1B516AE000A4844C /* ViewController+MASAdditions.m */; };
+		96C1CF881B55317600A69438 /* ActivityDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */; };
+		96C1CF8A1B55318300A69438 /* ActivityDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */; };
+		96D576911B57A6450040A497 /* ActivityDetailBodyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D576901B57A6450040A497 /* ActivityDetailBodyView.m */; };
+		96D576931B57A64E0040A497 /* ActivityDetailBodyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D576921B57A64E0040A497 /* ActivityDetailBodyView.xib */; };
+		96D576971B57E4500040A497 /* AddressListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D576951B57E4500040A497 /* AddressListTableViewCell.m */; };
+		96D576981B57E4500040A497 /* AddressListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D576961B57E4500040A497 /* AddressListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -532,6 +538,15 @@
 		9695F09D1B516AE000A4844C /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		9695F09E1B516AE000A4844C /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		9695F09F1B516AE000A4844C /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		96C1CF861B55317600A69438 /* ActivityDetailHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailHeadView.h; sourceTree = "<group>"; };
+		96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailHeadView.m; sourceTree = "<group>"; };
+		96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailHeadView.xib; sourceTree = "<group>"; };
+		96D5768F1B57A6450040A497 /* ActivityDetailBodyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityDetailBodyView.h; sourceTree = "<group>"; };
+		96D576901B57A6450040A497 /* ActivityDetailBodyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityDetailBodyView.m; sourceTree = "<group>"; };
+		96D576921B57A64E0040A497 /* ActivityDetailBodyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityDetailBodyView.xib; sourceTree = "<group>"; };
+		96D576941B57E4500040A497 /* AddressListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListTableViewCell.h; sourceTree = "<group>"; };
+		96D576951B57E4500040A497 /* AddressListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListTableViewCell.m; sourceTree = "<group>"; };
+		96D576961B57E4500040A497 /* AddressListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1296,6 +1311,12 @@
 				96834C891B54DC6D00C7344D /* ActivityListTableViewCell.h */,
 				96834C8A1B54DC6D00C7344D /* ActivityListTableViewCell.m */,
 				96834C8B1B54DC6D00C7344D /* ActivityListTableViewCell.xib */,
+				96C1CF861B55317600A69438 /* ActivityDetailHeadView.h */,
+				96C1CF871B55317600A69438 /* ActivityDetailHeadView.m */,
+				96C1CF891B55318300A69438 /* ActivityDetailHeadView.xib */,
+				96D5768F1B57A6450040A497 /* ActivityDetailBodyView.h */,
+				96D576901B57A6450040A497 /* ActivityDetailBodyView.m */,
+				96D576921B57A64E0040A497 /* ActivityDetailBodyView.xib */,
 			);
 			path = Activity;
 			sourceTree = "<group>";
@@ -1303,6 +1324,9 @@
 		96834C701B53CED500C7344D /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				96D576941B57E4500040A497 /* AddressListTableViewCell.h */,
+				96D576951B57E4500040A497 /* AddressListTableViewCell.m */,
+				96D576961B57E4500040A497 /* AddressListTableViewCell.xib */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1587,10 +1611,12 @@
 				18F7C57F1B55084600D90933 /* m8.jpg in Resources */,
 				18F7C5801B55084600D90933 /* m9.jpg in Resources */,
 				189838C61B33C68C00C8286E /* CustomWidgets in Resources */,
+				96D576931B57A64E0040A497 /* ActivityDetailBodyView.xib in Resources */,
 				9695F0A01B516AE000A4844C /* Info.plist in Resources */,
 				1805AE5D1B53ADD500BEB024 /* NormolCollectionCell.xib in Resources */,
 				18F7C5781B55084600D90933 /* m1.jpg in Resources */,
 				1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */,
+				96D576981B57E4500040A497 /* AddressListTableViewCell.xib in Resources */,
 				1898398D1B33C8CE00C8286E /* SDWebImageLICENSE in Resources */,
 				189838F11B33C68C00C8286E /* Controller in Resources */,
 				18F7C57B1B55084600D90933 /* m4.jpg in Resources */,
@@ -1603,6 +1629,7 @@
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
 				96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */,
+				96C1CF8A1B55318300A69438 /* ActivityDetailHeadView.xib in Resources */,
 				96834C671B53BD2300C7344D /* ShowPhotoListView.xib in Resources */,
 				1805AE471B5382D100BEB024 /* RankViewViewCell.xib in Resources */,
 				18F7C57E1B55084600D90933 /* m7.jpg in Resources */,
@@ -1711,6 +1738,7 @@
 				183440791B55EE7900117011 /* UIImageView+MJWebCache.m in Sources */,
 				96834C451B52530D00C7344D /* BaseViewController.m in Sources */,
 				189839791B33C8CE00C8286E /* AFURLResponseSerialization.m in Sources */,
+				96D576911B57A6450040A497 /* ActivityDetailBodyView.m in Sources */,
 				9695F0A61B516AE000A4844C /* MASViewConstraint.m in Sources */,
 				96834C781B53CF2400C7344D /* MomentViewController.m in Sources */,
 				9695F0A91B516AE000A4844C /* View+MASAdditions.m in Sources */,
@@ -1720,6 +1748,7 @@
 				1898390E1B33C84800C8286E /* ImageLibraryController.m in Sources */,
 				9695F0761B51516500A4844C /* TConst.m in Sources */,
 				1837346D1B4D046400720BFE /* MainDownCell.m in Sources */,
+				96D576971B57E4500040A497 /* AddressListTableViewCell.m in Sources */,
 				189839921B33C8CE00C8286E /* UIImage+MultiFormat.m in Sources */,
 				189839991B33C8CE00C8286E /* UIAlertView+AFNetworking.m in Sources */,
 				9695F07B1B51516500A4844C /* UIAlertView+Blocks.m in Sources */,
@@ -1729,6 +1758,7 @@
 				96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */,
 				96834C6E1B53CE1700C7344D /* ActivityViewController.m in Sources */,
 				189839AB1B33CB0F00C8286E /* UIImage+FixOrientation.m in Sources */,
+				96C1CF881B55317600A69438 /* ActivityDetailHeadView.m in Sources */,
 				189839931B33C8CE00C8286E /* UIImage+WebP.m in Sources */,
 				183734851B4E65C900720BFE /* ImageButton.m in Sources */,
 				1837346F1B4D046400720BFE /* MainHeardViewCell.m in Sources */,
