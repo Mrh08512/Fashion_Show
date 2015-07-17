@@ -17,57 +17,52 @@
 @synthesize myRightButton               = _myRightButton;
 
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    {
-        /*左边按钮*/
-        UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [leftButton setFrame:CGRectMake(0, 0, 44.0f, 44.0f)];  //40.0f, 44.0f
-        [leftButton setTitle:@"" forState:UIControlStateNormal];
-        [leftButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [leftButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
-        [leftButton setExclusiveTouch:YES];
-        [leftButton setBackgroundColor:[UIColor clearColor]];
-        [leftButton addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        UIEdgeInsets leftEdge = leftButton.imageEdgeInsets;
-        leftEdge.right = 17;
-        [leftButton setImageEdgeInsets:leftEdge];
-        self.myLeftButton = leftButton;
-        [leftButton setHidden:YES];
-        
-        UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
-        [self.navigationItem setLeftBarButtonItem:leftButtonItem];
-//        [leftButtonItem release];
-        
-        /*右边按钮*/
-        UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [rightButton setFrame:CGRectMake(0, 0, 44.0f, 44.0f)];
-        [rightButton setTitle:@"" forState:UIControlStateNormal];
-        [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [rightButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
-        UIEdgeInsets rightEdge = rightButton.imageEdgeInsets;
-        rightEdge.left = 17;
-        [rightButton setImageEdgeInsets:rightEdge];
-        [rightButton setExclusiveTouch:YES];
-        [rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
-        [rightButton setHidden:YES];
-        self.myRightButton = rightButton;
-        
-        UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
-        [self.navigationItem setRightBarButtonItem:rightButtonItem];
-//        [rightButtonItem release];
-        
-        self.automaticallyAdjustsScrollViewInsets = YES;
-        self.view.backgroundColor = [UIColor whiteColor];
-    }
-    return self;
-}
+
+
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    /*左边按钮*/
+    UIButton *leftButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftButton setFrame:CGRectMake(0, 0, 44.0f, 44.0f)];  //40.0f, 44.0f
+    [leftButton setTitle:@"" forState:UIControlStateNormal];
+    [leftButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [leftButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
+    [leftButton setExclusiveTouch:YES];
+    [leftButton setBackgroundColor:[UIColor clearColor]];
+    [leftButton addTarget:self action:@selector(leftButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    UIEdgeInsets leftEdge = leftButton.imageEdgeInsets;
+    leftEdge.right = 17;
+    [leftButton setImageEdgeInsets:leftEdge];
+    self.myLeftButton = leftButton;
+    [leftButton setHidden:YES];
+    
+    UIBarButtonItem *leftButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftButton];
+    [self.navigationItem setLeftBarButtonItem:leftButtonItem];
+    //        [leftButtonItem release];
+    
+    /*右边按钮*/
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightButton setFrame:CGRectMake(0, 0, 44.0f, 44.0f)];
+    [rightButton setTitle:@"" forState:UIControlStateNormal];
+    [rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [rightButton.titleLabel setFont:[UIFont systemFontOfSize:15.0f]];
+    UIEdgeInsets rightEdge = rightButton.imageEdgeInsets;
+    rightEdge.left = 17;
+    [rightButton setImageEdgeInsets:rightEdge];
+    [rightButton setExclusiveTouch:YES];
+    [rightButton addTarget:self action:@selector(rightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButton setHidden:YES];
+    self.myRightButton = rightButton;
+    
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightButton];
+    [self.navigationItem setRightBarButtonItem:rightButtonItem];
+    //        [rightButtonItem release];
+    
+    self.automaticallyAdjustsScrollViewInsets = YES;
+    self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view from its nib.
     
 }

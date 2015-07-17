@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol TitleBarDelegate <NSObject>
+
+- (void)titleBarClickButto:(UIButton *)button;
+
+@end
+
 @interface TitleBar : UIView
 
 @property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, assign) id<TitleBarDelegate>delegate;
+
 
 @end

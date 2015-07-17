@@ -46,7 +46,7 @@
             
         }
         // downLine
-        UILabel *downLine = [[UILabel alloc] initWithFrame:CGRectMake(0, height, SCREEN_WIDTH - 16, 1)];
+        UILabel *downLine = [[UILabel alloc] initWithFrame:CGRectMake(0, height, SCREEN_WIDTH , 1)];
         downLine.backgroundColor = [UIColor whiteColor];
         [self addSubview:downLine];
         
@@ -68,6 +68,17 @@
     _currentBUtton.selected = NO;
     sender.selected = YES;
     _currentBUtton = sender;
+    
+    if (_delegate && [_delegate respondsToSelector:@selector(titleBarClickButto:)] )
+    {
+        [_delegate titleBarClickButto:sender];
+    }
+}
+
+- (void)setDelegate:(id<TitleBarDelegate>)delegate
+{
+    _delegate = delegate;
+    [self buttonpress:_currentBUtton];
 }
 
 /*

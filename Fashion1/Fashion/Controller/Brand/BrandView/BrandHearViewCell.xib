@@ -129,7 +129,7 @@
                 <outlet property="secondContentView" destination="Wib-Ht-jIz" id="HXu-YG-uG5"/>
                 <outlet property="titleBarView" destination="S0u-lP-I9Q" id="a9J-6H-szF"/>
             </connections>
-            <point key="canvasLocation" x="299" y="321"/>
+            <point key="canvasLocation" x="249" y="292"/>
         </tableViewCell>
     </objects>
     <resources>

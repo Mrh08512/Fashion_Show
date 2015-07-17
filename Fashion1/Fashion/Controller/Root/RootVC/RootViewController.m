@@ -12,7 +12,8 @@
 #import "BrandViewController.h"
 #import "BaseNavigationController.h"
 #import "ShowPhotoViewController.h"
-
+#import "SnsViewController.h"
+#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 @interface RootViewController () <UITabBarControllerDelegate, CustomTabBarViewDelegate>
 
 @end
@@ -22,49 +23,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSMutableArray *viewControllersArray = [[NSMutableArray alloc] initWithCapacity:3];
+    BrandViewController *discover = [[BrandViewController alloc] init];
+    [self addChildVc:discover title:@"品牌" image:@"品牌2" selectedImage:@"品牌1"];
+    
+    ShowPhotoViewController *messageCenter = [[ShowPhotoViewController alloc] init];
+    [self addChildVc:messageCenter title:@"影秀" image:@"影缘2" selectedImage:@"影缘1"];
+    
+    MainViewController *home = [[MainViewController alloc] init];
+    [self addChildVc:home title:@"首页" image:@"个人2" selectedImage:@"个人1"];
 
-    MainViewController *vc1 = [[MainViewController alloc] init];
-    BaseNavigationController *nav1 = [[BaseNavigationController alloc] initWithRootViewController:vc1];
-    UIViewController *vc2 = [[UIViewController alloc] init];
-    BrandViewController *vc5 = [[BrandViewController alloc] init];
-    BaseNavigationController *nav5 = [[BaseNavigationController alloc] initWithRootViewController:vc5];
-    ShowPhotoViewController *vc3 = [ShowPhotoViewController new];
-    BaseNavigationController *nav3 = [[BaseNavigationController alloc] initWithRootViewController:vc3];
-    
-    [viewControllersArray addObject:nav3];
-    [viewControllersArray addObject:nav1];
-    [viewControllersArray addObject:nav5];
-    [viewControllersArray addObject:vc2];
-    
-    self.viewControllers = viewControllersArray;
-    
-    UITabBarItem *showPhotoItem  = [self.tabBar.items objectAtIndex:0];
-    UITabBarItem *mainItem  = [self.tabBar.items objectAtIndex:1];
-    UITabBarItem *orderItem = [self.tabBar.items objectAtIndex:2];
-    UITabBarItem *cartItem  = [self.tabBar.items objectAtIndex:3];
-    
-    [mainItem setImage:[[UIImage imageNamed:@"icon_tabbar_main_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [mainItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_main_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    
-    [orderItem setImage:[[UIImage imageNamed:@"icon_tabbar_urgent_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [orderItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_urgent_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-    
-    [cartItem setImage:[[UIImage imageNamed:@"icon_tabbar_urgent_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [cartItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_urgent_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    SnsViewController *profile = [[SnsViewController alloc] init];
+    [self addChildVc:profile title:@"社交" image:@"社交2" selectedImage:@"社交1"];
 
-    [showPhotoItem setImage:[[UIImage imageNamed:@"icon_tabbar_urgent_nomal"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    [showPhotoItem setSelectedImage:[[UIImage imageNamed:@"icon_tabbar_urgent_down"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-
-    //
-//    [self configCustomTar];
+///    [self configCustomTar];
     
 
     
 
 }
+
+
+- (void)addChildVc:(UIViewController *)childVc title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
+{
+    // 设置子控制器的文字
+    childVc.title = title; // 同时设置tabbar和navigationBar的文字
+    
+    // 设置子控制器的图片
+    childVc.tabBarItem.image = [UIImage imageNamed:image];
+    if (iOS7) {
+        childVc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    } else {
+        childVc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
+    }
+    
+    // 设置文字的样式
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = COLOR_CUSTOM(123, 123, 123, 1);
+    NSMutableDictionary *selectTextAttrs = [NSMutableDictionary dictionary];
+    selectTextAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    [childVc.tabBarItem setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    [childVc.tabBarItem setTitleTextAttributes:selectTextAttrs forState:UIControlStateSelected];
+    
+    // 先给外面传进来的小控制器 包装 一个导航控制器
+    BaseNavigationController  *nav = [[BaseNavigationController alloc] initWithRootViewController:childVc];
+    // 添加为子控制器
+    [self addChildViewController:nav];
+}
+
+
 
 - (void)configCustomTar
 {
