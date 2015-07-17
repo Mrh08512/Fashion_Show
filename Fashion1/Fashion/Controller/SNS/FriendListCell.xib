@@ -129,6 +129,9 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="userImage" destination="oEe-yr-KNB" id="OTI-M1-t6Q"/>
+            </connections>
             <point key="canvasLocation" x="217" y="317.5"/>
         </tableViewCell>
     </objects>
