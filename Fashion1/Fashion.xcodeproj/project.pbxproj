@@ -135,6 +135,9 @@
 		18F7C57E1B55084600D90933 /* m7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18F7C5671B55084600D90933 /* m7.jpg */; };
 		18F7C57F1B55084600D90933 /* m8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18F7C5681B55084600D90933 /* m8.jpg */; };
 		18F7C5801B55084600D90933 /* m9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18F7C5691B55084600D90933 /* m9.jpg */; };
+		9621E0EE1B5814220079EAA0 /* AddressPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */; };
+		9621E0F11B58CFE70079EAA0 /* AddressListInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9621E0F01B58CFE70079EAA0 /* AddressListInputView.m */; };
+		9621E0F31B58CFF80079EAA0 /* AddressListInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9621E0F21B58CFF80079EAA0 /* AddressListInputView.xib */; };
 		96834C451B52530D00C7344D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C441B52530D00C7344D /* BaseViewController.m */; };
 		96834C4B1B526F3A00C7344D /* PublishPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96834C491B526F3A00C7344D /* PublishPhotoCollectionViewCell.m */; };
 		96834C4C1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96834C4A1B526F3A00C7344D /* PublishPhotoCollectionViewCell.xib */; };
@@ -427,6 +430,11 @@
 		18F7C5671B55084600D90933 /* m7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m7.jpg; sourceTree = "<group>"; };
 		18F7C5681B55084600D90933 /* m8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m8.jpg; sourceTree = "<group>"; };
 		18F7C5691B55084600D90933 /* m9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m9.jpg; sourceTree = "<group>"; };
+		9621E0EC1B5814220079EAA0 /* AddressPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressPublishViewController.h; sourceTree = "<group>"; };
+		9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressPublishViewController.m; sourceTree = "<group>"; };
+		9621E0EF1B58CFE70079EAA0 /* AddressListInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListInputView.h; sourceTree = "<group>"; };
+		9621E0F01B58CFE70079EAA0 /* AddressListInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListInputView.m; sourceTree = "<group>"; };
+		9621E0F21B58CFF80079EAA0 /* AddressListInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListInputView.xib; sourceTree = "<group>"; };
 		96834C431B52530D00C7344D /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		96834C441B52530D00C7344D /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		96834C481B526F3A00C7344D /* PublishPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishPhotoCollectionViewCell.h; sourceTree = "<group>"; };
@@ -1235,6 +1243,8 @@
 			children = (
 				96834C731B53CF1200C7344D /* AddressViewController.h */,
 				96834C741B53CF1200C7344D /* AddressViewController.m */,
+				9621E0EC1B5814220079EAA0 /* AddressPublishViewController.h */,
+				9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1282,6 +1292,9 @@
 				96D576941B57E4500040A497 /* AddressListTableViewCell.h */,
 				96D576951B57E4500040A497 /* AddressListTableViewCell.m */,
 				96D576961B57E4500040A497 /* AddressListTableViewCell.xib */,
+				9621E0EF1B58CFE70079EAA0 /* AddressListInputView.h */,
+				9621E0F01B58CFE70079EAA0 /* AddressListInputView.m */,
+				9621E0F21B58CFF80079EAA0 /* AddressListInputView.xib */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1549,6 +1562,7 @@
 				189838C41B33C68C00C8286E /* ThirdLibrary in Resources */,
 				1805AE521B5391E300BEB024 /* BrandViewCell.xib in Resources */,
 				183734721B4D046400720BFE /* MainRankingCell.xib in Resources */,
+				9621E0F31B58CFF80079EAA0 /* AddressListInputView.xib in Resources */,
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
@@ -1629,6 +1643,7 @@
 				189839721B33C8CE00C8286E /* AFHTTPRequestOperationManager.m in Sources */,
 				96834C901B55030000C7344D /* ActivityDetailViewController.m in Sources */,
 				18983B061B33D6C000C8286E /* MJRefreshFooterView.m in Sources */,
+				9621E0F11B58CFE70079EAA0 /* AddressListInputView.m in Sources */,
 				9695F0841B51516500A4844C /* TScrollView.m in Sources */,
 				183440761B55EE7900117011 /* MJPhotoToolbar.m in Sources */,
 				189839891B33C8CE00C8286E /* SDWebImageCompat.m in Sources */,
@@ -1636,6 +1651,7 @@
 				183440781B55EE7900117011 /* SDWebImageManager+MJ.m in Sources */,
 				1805AE411B53813400BEB024 /* RankViewController.m in Sources */,
 				18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */,
+				9621E0EE1B5814220079EAA0 /* AddressPublishViewController.m in Sources */,
 				1898398F1B33C8CE00C8286E /* SDWebImagePrefetcher.m in Sources */,
 				1898398C1B33C8CE00C8286E /* SDWebImageDownloaderOperation.m in Sources */,
 				189838D31B33C68C00C8286E /* FunctionManageObject.m in Sources */,
