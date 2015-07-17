@@ -9,6 +9,7 @@
 #import "SnsViewController.h"
 #import "TitleBar.h"
 #import "MessageCell.h"
+#import "FriendListCell.h"
 #define kMessage @"消息列表"
 #define kFriendList @"好友列表"
 #define kUpdate @"动态"
@@ -47,7 +48,7 @@
 - (void)initDataSource
 {
     _messageData      = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",@"4",nil];
-    _friendListData   = [[NSMutableArray alloc] init];
+    _friendListData   = [[NSMutableArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",nil];
     _upDateData       = [[NSMutableArray alloc] init];
     _notificationData = [[NSMutableArray alloc] init];
     _allDataSource    = [[NSMutableDictionary alloc] init];
@@ -87,6 +88,7 @@
 - (void)registeCellClass
 {
     [_myTableView registerNib:[UINib nibWithNibName:@"MessageCell" bundle:nil] forCellReuseIdentifier:@"MessageCell"];
+    [_myTableView registerNib:[UINib nibWithNibName:@"FriendListCell" bundle:nil] forCellReuseIdentifier:@"FriendListCell"];
 }
 
 
@@ -107,6 +109,9 @@
     }
     else if ([title isEqualToString:kFriendList])
     {
+        self.currentCellName = kFriendList;
+        [_myTableView reloadData];
+
         
     }
     else if ([title isEqualToString:kUpdate])
@@ -134,7 +139,9 @@
     }
     else if ([self.currentCellName isEqualToString:kFriendList])
     {
-        return nil;
+        FriendListCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"FriendListCell"];
+        cell.userImage.image = [UIImage imageNamed:_currentData[indexPath.row]];
+        return cell;
     }
     else if ([self.currentCellName isEqualToString:kUpdate])
     {

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CornersImageView.h"
 @interface FriendListCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet CornersImageView *userImage;
 
 @end
