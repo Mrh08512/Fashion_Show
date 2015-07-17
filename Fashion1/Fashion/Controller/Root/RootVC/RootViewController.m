@@ -13,6 +13,8 @@
 #import "BaseNavigationController.h"
 #import "ShowPhotoViewController.h"
 #import "SnsViewController.h"
+#import "UserCenterViewController.h"
+
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
 @interface RootViewController () <UITabBarControllerDelegate, CustomTabBarViewDelegate>
 
@@ -34,6 +36,9 @@
 
     SnsViewController *profile = [[SnsViewController alloc] init];
     [self addChildVc:profile title:@"社交" image:@"社交2" selectedImage:@"社交1"];
+    
+    UserCenterViewController *userCenter = [UserCenterViewController new];
+    [self addChildVc:userCenter title:@"个人中心" image:@"个人2" selectedImage:@"个人1"];
 
 ///    [self configCustomTar];
     

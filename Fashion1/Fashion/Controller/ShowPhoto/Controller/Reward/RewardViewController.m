@@ -8,6 +8,7 @@
 
 #import "RewardViewController.h"
 #import "RewardListTableViewCell.h"
+#import "OfferRewardControllerViewController.h"
 
 @interface RewardViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -38,8 +39,10 @@
     tableView.dataSource = self;
     tableView.backgroundColor = [UIColor clearColor];
     tableView.showsVerticalScrollIndicator = NO;
+    tableView.rowHeight = 200;
     [tableView registerNib:[UINib nibWithNibName:@"RewardListTableViewCell" bundle:nil] forCellReuseIdentifier:@"RewardListTableViewCell"];
     [self.view addSubview:tableView];
+    self.tableView = tableView;
 }
 
 #pragma mark - UITableViewDataSource
@@ -61,6 +64,15 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     return 1;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    OfferRewardControllerViewController *vc = [OfferRewardControllerViewController new];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

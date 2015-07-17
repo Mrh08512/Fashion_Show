@@ -90,6 +90,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     AddressDetailViewController *detailViewController = [AddressDetailViewController new];
+    detailViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 
