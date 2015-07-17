@@ -86,6 +86,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     ActivityDetailViewController *activityDetailViewController = [ActivityDetailViewController new];
+    activityDetailViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:activityDetailViewController animated:YES];
 }
 

@@ -197,6 +197,7 @@
 		96F0B5C01B58EFCE00F7C193 /* AddressDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */; };
 		96F0B5C41B58F3FE00F7C193 /* RewardListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5C21B58F3FE00F7C193 /* RewardListTableViewCell.m */; };
 		96F0B5C51B58F3FE00F7C193 /* RewardListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F0B5C31B58F3FE00F7C193 /* RewardListTableViewCell.xib */; };
+		96F0B5CC1B5938B300F7C193 /* UserCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F0B5CB1B5938B300F7C193 /* UserCenterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -555,6 +556,8 @@
 		96F0B5C11B58F3FE00F7C193 /* RewardListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardListTableViewCell.h; sourceTree = "<group>"; };
 		96F0B5C21B58F3FE00F7C193 /* RewardListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardListTableViewCell.m; sourceTree = "<group>"; };
 		96F0B5C31B58F3FE00F7C193 /* RewardListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RewardListTableViewCell.xib; sourceTree = "<group>"; };
+		96F0B5CA1B5938B300F7C193 /* UserCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterViewController.h; sourceTree = "<group>"; };
+		96F0B5CB1B5938B300F7C193 /* UserCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1000,6 +1003,7 @@
 		189838F01B33C68C00C8286E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96F0B5C61B59389900F7C193 /* UserCenter */,
 				183440801B5613B000117011 /* SNS */,
 				96834C551B53AFBC00C7344D /* ShowPhoto */,
 				1805AE481B53901000BEB024 /* Brand */,
@@ -1288,8 +1292,6 @@
 			children = (
 				96834C731B53CF1200C7344D /* AddressViewController.h */,
 				96834C741B53CF1200C7344D /* AddressViewController.m */,
-				9621E0EC1B5814220079EAA0 /* AddressPublishViewController.h */,
-				9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */,
 				96F0B5BE1B58EFCE00F7C193 /* AddressDetailViewController.h */,
 				96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */,
 			);
@@ -1339,9 +1341,6 @@
 				96D576941B57E4500040A497 /* AddressListTableViewCell.h */,
 				96D576951B57E4500040A497 /* AddressListTableViewCell.m */,
 				96D576961B57E4500040A497 /* AddressListTableViewCell.xib */,
-				9621E0EF1B58CFE70079EAA0 /* AddressListInputView.h */,
-				9621E0F01B58CFE70079EAA0 /* AddressListInputView.m */,
-				9621E0F21B58CFF80079EAA0 /* AddressListInputView.xib */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1528,6 +1527,39 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		96F0B5C61B59389900F7C193 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				96F0B5C71B59389900F7C193 /* Controller */,
+				96F0B5C81B59389900F7C193 /* Model */,
+				96F0B5C91B59389900F7C193 /* View */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		96F0B5C71B59389900F7C193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96F0B5CA1B5938B300F7C193 /* UserCenterViewController.h */,
+				96F0B5CB1B5938B300F7C193 /* UserCenterViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		96F0B5C81B59389900F7C193 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96F0B5C91B59389900F7C193 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1612,7 +1644,6 @@
 				189838C41B33C68C00C8286E /* ThirdLibrary in Resources */,
 				1805AE521B5391E300BEB024 /* BrandViewCell.xib in Resources */,
 				183734721B4D046400720BFE /* MainRankingCell.xib in Resources */,
-				9621E0F31B58CFF80079EAA0 /* AddressListInputView.xib in Resources */,
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
@@ -1697,7 +1728,6 @@
 				189839721B33C8CE00C8286E /* AFHTTPRequestOperationManager.m in Sources */,
 				96834C901B55030000C7344D /* ActivityDetailViewController.m in Sources */,
 				18983B061B33D6C000C8286E /* MJRefreshFooterView.m in Sources */,
-				9621E0F11B58CFE70079EAA0 /* AddressListInputView.m in Sources */,
 				9695F0841B51516500A4844C /* TScrollView.m in Sources */,
 				183440761B55EE7900117011 /* MJPhotoToolbar.m in Sources */,
 				189839891B33C8CE00C8286E /* SDWebImageCompat.m in Sources */,
@@ -1705,7 +1735,6 @@
 				183440781B55EE7900117011 /* SDWebImageManager+MJ.m in Sources */,
 				1805AE411B53813400BEB024 /* RankViewController.m in Sources */,
 				18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */,
-				9621E0EE1B5814220079EAA0 /* AddressPublishViewController.m in Sources */,
 				1898398F1B33C8CE00C8286E /* SDWebImagePrefetcher.m in Sources */,
 				1898398C1B33C8CE00C8286E /* SDWebImageDownloaderOperation.m in Sources */,
 				189838D31B33C68C00C8286E /* FunctionManageObject.m in Sources */,
@@ -1804,6 +1833,7 @@
 				189838C01B33C68C00C8286E /* Fashion.xcdatamodeld in Sources */,
 				183D6C0A1B4B74EA00577577 /* MainViewController.m in Sources */,
 				96834C7B1B53CF3700C7344D /* RewardViewController.m in Sources */,
+				96F0B5CC1B5938B300F7C193 /* UserCenterViewController.m in Sources */,
 				189839711B33C8CE00C8286E /* AFHTTPRequestOperation.m in Sources */,
 				189839731B33C8CE00C8286E /* AFHTTPSessionManager.m in Sources */,
 				9695F0831B51516500A4844C /* UIView+TBasicTools.m in Sources */,
