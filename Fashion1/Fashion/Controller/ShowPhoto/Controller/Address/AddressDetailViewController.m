@@ -12,15 +12,16 @@
 #import "PraiseViewCell.h"
 // 基于320寛
 
-#define kTestContet @"dasio速度进口拉丝的就阿fjsakljfdlksajflkasdjf"
+#define kTestContet @"dasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasdjf"
 #define kHearBaseHeihgt 327
 #define kHeardSpaceHeight SCREEN_WIDTH *0.618 - 320 *0.618
 
-@interface AddressDetailViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic,strong) UITableView *myTableView;
+@interface AddressDetailViewController () <UITableViewDataSource,UITableViewDelegate>
 
+@property (nonatomic,strong) UITableView *myTableView;
 // 要处理的的cell
 @property (nonatomic,strong) UITableViewCell *prototypeCell;
+
 @end
 
 @implementation AddressDetailViewController

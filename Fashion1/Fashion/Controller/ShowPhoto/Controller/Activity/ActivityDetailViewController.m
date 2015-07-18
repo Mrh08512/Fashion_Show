@@ -7,10 +7,17 @@
 //
 
 #import "ActivityDetailViewController.h"
-#import "ActivityDetailHeadView.h"
-#import "ActivityDetailBodyView.h"
+#import "ActivityDetailHeaderCell.h"
+#import "ActivityDetailRegisterCell.h"
+#import "ActivityDetailContentCell.h"
 
-@interface ActivityDetailViewController ()
+static NSString * const headerIdentifer = @"ActivityDetailHeaderCell";
+static NSString * const registerIdentifer = @"ActivityDetailRegisterCell";
+static NSString * const contentIdentifer = @"ActivityDetailContentCell";
+
+@interface ActivityDetailViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) UITableView *tableView;
 
 @end
 
@@ -35,23 +42,69 @@
     bkView.image = [UIImage imageNamed:@"广场背景"];
     [self.view addSubview:bkView];
     
-    UIScrollView *scrollView = [UIScrollView new];
-    scrollView.frame = self.view.bounds;
-    scrollView.contentSize = CGSizeMake(SCREEN_WIDTH, 10000);
-    scrollView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-    scrollView.contentOffset = CGPointMake(0, -64);
-    [self.view addSubview:scrollView];
+    UITableView *tableView = [UITableView new];
+    tableView.frame = self.view.bounds;
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailHeaderCell" bundle:nil] forCellReuseIdentifier:headerIdentifer];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailRegisterCell" bundle:nil] forCellReuseIdentifier:registerIdentifer];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailContentCell" bundle:nil] forCellReuseIdentifier:contentIdentifer];
+    [self.view addSubview:tableView];
+    self.tableView = tableView;
+}
+
+#pragma mark - UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    ActivityDetailHeadView *headView = [ActivityDetailHeadView activityDetailHeadView];
-    headView.height = 200;
-    headView.width = SCREEN_WIDTH;
-    [scrollView addSubview:headView];
+    return [self configCellWithIndexPath:indexPath];
+}
+
+- (UITableViewCell *)configCellWithIndexPath:(NSIndexPath *)indexPath {
     
-    ActivityDetailBodyView *bodyView = [ActivityDetailBodyView activityDetailBodyView];
-    bodyView.y = CGRectGetMaxY(headView.frame);
-    bodyView.height = 400;
-    bodyView.width = SCREEN_WIDTH;
-    [scrollView addSubview:bodyView];
+    UITableViewCell *cell = nil;
+    
+    if (indexPath.section == 0) {
+        
+        cell = [self.tableView dequeueReusableCellWithIdentifier:headerIdentifer];
+        cell.contentView.backgroundColor = [UIColor redColor];
+    }
+    if (indexPath.section == 1) {
+        
+        cell = [self.tableView dequeueReusableCellWithIdentifier:registerIdentifer];
+    }
+    if (indexPath.section == 2) {
+        
+        cell = [self.tableView dequeueReusableCellWithIdentifier:contentIdentifer];
+    }
+    
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 3;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.section == 0) {
+        
+        return 200;
+    }
+    if (indexPath.section == 1) {
+        
+        return 110;
+    }
+    return 200;
 }
 
 @end

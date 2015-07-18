@@ -1,34 +1,34 @@
 //
-//  ActivityDetailBodyView.m
+//  ActivityDetailRegisterCell.m
 //  Fashion
 //
-//  Created by TangJR on 7/16/15.
+//  Created by TangJR on 7/18/15.
 //  Copyright (c) 2015 MRH-MAC. All rights reserved.
 //
 
-#import "ActivityDetailBodyView.h"
+#import "ActivityDetailRegisterCell.h"
 #import "PublishPhotoCollectionViewCell.h"
 
-@interface ActivityDetailBodyView () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ActivityDetailRegisterCell () <UICollectionViewDataSource, UICollectionViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UICollectionView *grilCollection;
+@property (weak, nonatomic) IBOutlet UICollectionView *girlCollection;
 @property (weak, nonatomic) IBOutlet UICollectionView *boyCollection;
 
 @end
 
-@implementation ActivityDetailBodyView
-
-+ (instancetype)activityDetailBodyView {
-    
-    return [[[NSBundle mainBundle] loadNibNamed:@"ActivityDetailBodyView" owner:nil options:nil] firstObject];
-}
+@implementation ActivityDetailRegisterCell
 
 - (void)awakeFromNib {
+    // Initialization code
     
-    [super awakeFromNib];
-    
-    [self.grilCollection registerNib:[UINib nibWithNibName:@"PublishPhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PublishPhotoCollectionViewCell"];
+    [self.girlCollection registerNib:[UINib nibWithNibName:@"PublishPhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PublishPhotoCollectionViewCell"];
     [self.boyCollection registerNib:[UINib nibWithNibName:@"PublishPhotoCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:@"PublishPhotoCollectionViewCell"];
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+
+    // Configure the view for the selected state
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -51,7 +51,5 @@
 }
 
 #pragma mark - UICollectionViewDelegate
-
-
 
 @end
