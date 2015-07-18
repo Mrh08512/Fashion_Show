@@ -48,6 +48,8 @@
 		183D6C0A1B4B74EA00577577 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D6C091B4B74EA00577577 /* MainViewController.m */; };
 		183D6C0E1B4B74F400577577 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D6C0D1B4B74F400577577 /* RootViewController.m */; };
 		183D6C231B4BC4BF00577577 /* FashionPiazzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183D6C221B4BC4BF00577577 /* FashionPiazzaViewController.m */; };
+		1872BA201B58FECB003881CB /* AdressDetailHeardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872BA1E1B58FECB003881CB /* AdressDetailHeardCell.m */; };
+		1872BA211B58FECB003881CB /* AdressDetailHeardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1872BA1F1B58FECB003881CB /* AdressDetailHeardCell.xib */; };
 		189838B11B33C68C00C8286E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189838B01B33C68C00C8286E /* Foundation.framework */; };
 		189838B31B33C68C00C8286E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189838B21B33C68C00C8286E /* CoreGraphics.framework */; };
 		189838B51B33C68C00C8286E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189838B41B33C68C00C8286E /* UIKit.framework */; };
@@ -120,6 +122,11 @@
 		18983B081B33D6C000C8286E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983AFE1B33D6C000C8286E /* UIScrollView+MJExtension.m */; };
 		18983B091B33D6C000C8286E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B001B33D6C000C8286E /* UIScrollView+MJRefresh.m */; };
 		18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B021B33D6C000C8286E /* UIView+MJExtension.m */; };
+		18DBE2DE1B59F44D003D13EF /* AdressDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2DC1B59F44D003D13EF /* AdressDescriptionCell.m */; };
+		18DBE2DF1B59F44D003D13EF /* AdressDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2DD1B59F44D003D13EF /* AdressDescriptionCell.xib */; };
+		18DBE2E31B59F718003D13EF /* PraiseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E11B59F718003D13EF /* PraiseViewCell.m */; };
+		18DBE2E41B59F718003D13EF /* PraiseViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */; };
+		18DBE2E71B59F8C4003D13EF /* PraiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E61B59F8C4003D13EF /* PraiseView.m */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
 		18F7C54E1B54C11600D90933 /* BrandDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C54D1B54C11600D90933 /* BrandDetailModel.m */; };
@@ -281,6 +288,9 @@
 		183D6C0D1B4B74F400577577 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		183D6C211B4BC4BF00577577 /* FashionPiazzaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FashionPiazzaViewController.h; sourceTree = "<group>"; };
 		183D6C221B4BC4BF00577577 /* FashionPiazzaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FashionPiazzaViewController.m; sourceTree = "<group>"; };
+		1872BA1D1B58FECB003881CB /* AdressDetailHeardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdressDetailHeardCell.h; sourceTree = "<group>"; };
+		1872BA1E1B58FECB003881CB /* AdressDetailHeardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdressDetailHeardCell.m; sourceTree = "<group>"; };
+		1872BA1F1B58FECB003881CB /* AdressDetailHeardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressDetailHeardCell.xib; sourceTree = "<group>"; };
 		189838AD1B33C68C00C8286E /* Fashion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fashion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189838B01B33C68C00C8286E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		189838B21B33C68C00C8286E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -415,6 +425,14 @@
 		18983B001B33D6C000C8286E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		18983B011B33D6C000C8286E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		18983B021B33D6C000C8286E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18DBE2DB1B59F44D003D13EF /* AdressDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdressDescriptionCell.h; sourceTree = "<group>"; };
+		18DBE2DC1B59F44D003D13EF /* AdressDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdressDescriptionCell.m; sourceTree = "<group>"; };
+		18DBE2DD1B59F44D003D13EF /* AdressDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressDescriptionCell.xib; sourceTree = "<group>"; };
+		18DBE2E01B59F718003D13EF /* PraiseViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseViewCell.h; sourceTree = "<group>"; };
+		18DBE2E11B59F718003D13EF /* PraiseViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseViewCell.m; sourceTree = "<group>"; };
+		18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PraiseViewCell.xib; sourceTree = "<group>"; };
+		18DBE2E51B59F8C4003D13EF /* PraiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseView.h; sourceTree = "<group>"; };
+		18DBE2E61B59F8C4003D13EF /* PraiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseView.m; sourceTree = "<group>"; };
 		18E3F1A91B37C57E007636AB /* CustomTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarView.h; sourceTree = "<group>"; };
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
@@ -993,6 +1011,8 @@
 				183734841B4E65C900720BFE /* ImageButton.m */,
 				183734801B4E659A00720BFE /* CornersImageView.h */,
 				183734811B4E659A00720BFE /* CornersImageView.m */,
+				18DBE2E51B59F8C4003D13EF /* PraiseView.h */,
+				18DBE2E61B59F8C4003D13EF /* PraiseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1288,8 +1308,6 @@
 			children = (
 				96834C731B53CF1200C7344D /* AddressViewController.h */,
 				96834C741B53CF1200C7344D /* AddressViewController.m */,
-				9621E0EC1B5814220079EAA0 /* AddressPublishViewController.h */,
-				9621E0ED1B5814220079EAA0 /* AddressPublishViewController.m */,
 				96F0B5BE1B58EFCE00F7C193 /* AddressDetailViewController.h */,
 				96F0B5BF1B58EFCE00F7C193 /* AddressDetailViewController.m */,
 			);
@@ -1339,9 +1357,15 @@
 				96D576941B57E4500040A497 /* AddressListTableViewCell.h */,
 				96D576951B57E4500040A497 /* AddressListTableViewCell.m */,
 				96D576961B57E4500040A497 /* AddressListTableViewCell.xib */,
-				9621E0EF1B58CFE70079EAA0 /* AddressListInputView.h */,
-				9621E0F01B58CFE70079EAA0 /* AddressListInputView.m */,
-				9621E0F21B58CFF80079EAA0 /* AddressListInputView.xib */,
+				1872BA1D1B58FECB003881CB /* AdressDetailHeardCell.h */,
+				1872BA1E1B58FECB003881CB /* AdressDetailHeardCell.m */,
+				1872BA1F1B58FECB003881CB /* AdressDetailHeardCell.xib */,
+				18DBE2DB1B59F44D003D13EF /* AdressDescriptionCell.h */,
+				18DBE2DC1B59F44D003D13EF /* AdressDescriptionCell.m */,
+				18DBE2DD1B59F44D003D13EF /* AdressDescriptionCell.xib */,
+				18DBE2E01B59F718003D13EF /* PraiseViewCell.h */,
+				18DBE2E11B59F718003D13EF /* PraiseViewCell.m */,
+				18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -1612,12 +1636,12 @@
 				189838C41B33C68C00C8286E /* ThirdLibrary in Resources */,
 				1805AE521B5391E300BEB024 /* BrandViewCell.xib in Resources */,
 				183734721B4D046400720BFE /* MainRankingCell.xib in Resources */,
-				9621E0F31B58CFF80079EAA0 /* AddressListInputView.xib in Resources */,
 				183734701B4D046400720BFE /* MainHeardViewCell.xib in Resources */,
 				189839741B33C8CE00C8286E /* AFNetworkingLICENSE in Resources */,
 				183734871B4E71D500720BFE /* Images.xcassets in Resources */,
 				96834C831B54D4FA00C7344D /* ActivityListHeadView.xib in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
+				1872BA211B58FECB003881CB /* AdressDetailHeardCell.xib in Resources */,
 				96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */,
 				18F7C55D1B54FCF900D90933 /* UserInfoCollectionCell.xib in Resources */,
 				18F7C57A1B55084600D90933 /* m3.jpg in Resources */,
@@ -1636,6 +1660,8 @@
 				1805AE5D1B53ADD500BEB024 /* NormolCollectionCell.xib in Resources */,
 				18F7C5781B55084600D90933 /* m1.jpg in Resources */,
 				1837346C1B4D046400720BFE /* FashionPiazzaCell.xib in Resources */,
+				18DBE2DF1B59F44D003D13EF /* AdressDescriptionCell.xib in Resources */,
+				18DBE2E41B59F718003D13EF /* PraiseViewCell.xib in Resources */,
 				96D576981B57E4500040A497 /* AddressListTableViewCell.xib in Resources */,
 				1898398D1B33C8CE00C8286E /* SDWebImageLICENSE in Resources */,
 				189838F11B33C68C00C8286E /* Controller in Resources */,
@@ -1674,6 +1700,7 @@
 				183440831B5613C000117011 /* SnsViewController.m in Sources */,
 				9695F0801B51516500A4844C /* UIScrollView+TTouchEndEditing.m in Sources */,
 				189839911B33C8CE00C8286E /* UIImage+GIF.m in Sources */,
+				18DBE2E71B59F8C4003D13EF /* PraiseView.m in Sources */,
 				9695F0811B51516500A4844C /* UIView+ChangePartFrame.m in Sources */,
 				9695F0A11B516AE000A4844C /* MASCompositeConstraint.m in Sources */,
 				9695F0AA1B516AE000A4844C /* ViewController+MASAdditions.m in Sources */,
@@ -1681,6 +1708,7 @@
 				189838ED1B33C68C00C8286E /* BaseDataModel.m in Sources */,
 				1898399C1B33C8CE00C8286E /* UIProgressView+AFNetworking.m in Sources */,
 				18983AAE1B33D06300C8286E /* BaseNavigationController.m in Sources */,
+				1872BA201B58FECB003881CB /* AdressDetailHeardCell.m in Sources */,
 				189839961B33C8CE00C8286E /* UIView+WebCacheOperation.m in Sources */,
 				9695F0751B51516500A4844C /* Reachability.m in Sources */,
 				18983B041B33D6C000C8286E /* MJRefreshBaseView.m in Sources */,
@@ -1697,15 +1725,14 @@
 				189839721B33C8CE00C8286E /* AFHTTPRequestOperationManager.m in Sources */,
 				96834C901B55030000C7344D /* ActivityDetailViewController.m in Sources */,
 				18983B061B33D6C000C8286E /* MJRefreshFooterView.m in Sources */,
-				9621E0F11B58CFE70079EAA0 /* AddressListInputView.m in Sources */,
 				9695F0841B51516500A4844C /* TScrollView.m in Sources */,
 				183440761B55EE7900117011 /* MJPhotoToolbar.m in Sources */,
 				189839891B33C8CE00C8286E /* SDWebImageCompat.m in Sources */,
 				189839941B33C8CE00C8286E /* UIImageView+HighlightedWebCache.m in Sources */,
 				183440781B55EE7900117011 /* SDWebImageManager+MJ.m in Sources */,
+				18DBE2DE1B59F44D003D13EF /* AdressDescriptionCell.m in Sources */,
 				1805AE411B53813400BEB024 /* RankViewController.m in Sources */,
 				18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */,
-				9621E0EE1B5814220079EAA0 /* AddressPublishViewController.m in Sources */,
 				1898398F1B33C8CE00C8286E /* SDWebImagePrefetcher.m in Sources */,
 				1898398C1B33C8CE00C8286E /* SDWebImageDownloaderOperation.m in Sources */,
 				189838D31B33C68C00C8286E /* FunctionManageObject.m in Sources */,
@@ -1720,6 +1747,7 @@
 				1898398A1B33C8CE00C8286E /* SDWebImageDecoder.m in Sources */,
 				9695F0A81B516AE000A4844C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				1898397B1B33C8CE00C8286E /* MBProgressHUD+Add.m in Sources */,
+				18DBE2E31B59F718003D13EF /* PraiseViewCell.m in Sources */,
 				9695F0791B51516500A4844C /* TTools.m in Sources */,
 				96834C8C1B54DC6D00C7344D /* ActivityListTableViewCell.m in Sources */,
 				189839AA1B33CB0F00C8286E /* CustomTouchView.m in Sources */,
