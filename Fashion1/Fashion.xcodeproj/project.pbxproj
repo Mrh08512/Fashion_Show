@@ -127,6 +127,8 @@
 		18DBE2E31B59F718003D13EF /* PraiseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E11B59F718003D13EF /* PraiseViewCell.m */; };
 		18DBE2E41B59F718003D13EF /* PraiseViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */; };
 		18DBE2E71B59F8C4003D13EF /* PraiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E61B59F8C4003D13EF /* PraiseView.m */; };
+		18DBE2EB1B5A3289003D13EF /* CommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E91B5A3289003D13EF /* CommentsCell.m */; };
+		18DBE2EC1B5A3289003D13EF /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
 		18F7C54E1B54C11600D90933 /* BrandDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C54D1B54C11600D90933 /* BrandDetailModel.m */; };
@@ -434,6 +436,9 @@
 		18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PraiseViewCell.xib; sourceTree = "<group>"; };
 		18DBE2E51B59F8C4003D13EF /* PraiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseView.h; sourceTree = "<group>"; };
 		18DBE2E61B59F8C4003D13EF /* PraiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseView.m; sourceTree = "<group>"; };
+		18DBE2E81B5A3289003D13EF /* CommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsCell.h; sourceTree = "<group>"; };
+		18DBE2E91B5A3289003D13EF /* CommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsCell.m; sourceTree = "<group>"; };
+		18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
 		18E3F1A91B37C57E007636AB /* CustomTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarView.h; sourceTree = "<group>"; };
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
@@ -1016,6 +1021,9 @@
 				183734811B4E659A00720BFE /* CornersImageView.m */,
 				18DBE2E51B59F8C4003D13EF /* PraiseView.h */,
 				18DBE2E61B59F8C4003D13EF /* PraiseView.m */,
+				18DBE2E81B5A3289003D13EF /* CommentsCell.h */,
+				18DBE2E91B5A3289003D13EF /* CommentsCell.m */,
+				18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1708,6 +1716,7 @@
 				18F7C55F1B54FCF900D90933 /* UserInfoCollectionHeaderView.xib in Resources */,
 				18FFE0DC1B5769DF006F21A8 /* FriendListCell.xib in Resources */,
 				18F7C5791B55084600D90933 /* m2.jpg in Resources */,
+				18DBE2EC1B5A3289003D13EF /* CommentsCell.xib in Resources */,
 				18F7C57D1B55084600D90933 /* m6.jpg in Resources */,
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
@@ -1818,6 +1827,7 @@
 				18FFE0DB1B5769DF006F21A8 /* FriendListCell.m in Sources */,
 				189839861B33C8CE00C8286E /* MKAnnotationView+WebCache.m in Sources */,
 				1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */,
+				18DBE2EB1B5A3289003D13EF /* CommentsCell.m in Sources */,
 				9695F0A51B516AE000A4844C /* MASViewAttribute.m in Sources */,
 				9695F0741B51516500A4844C /* GTMBase64.m in Sources */,
 				1898399B1B33C8CE00C8286E /* UIImageView+AFNetworking.m in Sources */,

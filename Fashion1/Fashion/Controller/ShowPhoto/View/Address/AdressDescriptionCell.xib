@@ -17,22 +17,22 @@
                 <subviews>
                     <view alpha="0.34999999999999964" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-pG-AKP">
                         <rect key="frame" x="8" y="0.0" width="304" height="104"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.13083957390000001" blue="0.1311786825" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题：我来到你的城市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-gS-wyy">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题：我来到你的城市" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-gS-wyy">
                         <rect key="frame" x="16" y="16" width="150" height="18"/>
                         <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容：这里真不知道写什么！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-xq-VCN">
-                        <rect key="frame" x="31" y="49" width="169" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容：这里真不知道写什么！" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atw-xq-VCN">
+                        <rect key="frame" x="31" y="49" width="273" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="地址：东郊记忆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-9a-xcr">
-                        <rect key="frame" x="31" y="77" width="156" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：东郊记忆" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-9a-xcr">
+                        <rect key="frame" x="31" y="77" width="273" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -41,15 +41,25 @@
                 <constraints>
                     <constraint firstItem="Atw-xq-VCN" firstAttribute="top" secondItem="HJb-gS-wyy" secondAttribute="bottom" constant="15" id="921-tf-hnu"/>
                     <constraint firstItem="HJb-gS-wyy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="Bvg-8m-Tmr"/>
+                    <constraint firstAttribute="trailing" secondItem="bqf-9a-xcr" secondAttribute="trailing" constant="16" id="Nuq-gR-MSL"/>
                     <constraint firstItem="Atw-xq-VCN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="23" id="SgK-zp-fNR"/>
                     <constraint firstItem="fhx-pG-AKP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Smr-mH-LrT"/>
+                    <constraint firstItem="bqf-9a-xcr" firstAttribute="top" secondItem="Atw-xq-VCN" secondAttribute="bottom" constant="12" id="VJy-gj-oSA"/>
                     <constraint firstItem="HJb-gS-wyy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Whv-TS-acf"/>
                     <constraint firstItem="fhx-pG-AKP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="a8b-IC-b0y"/>
+                    <constraint firstAttribute="trailing" secondItem="Atw-xq-VCN" secondAttribute="trailing" constant="16" id="jr8-2Y-XLv"/>
+                    <constraint firstAttribute="bottom" secondItem="bqf-9a-xcr" secondAttribute="bottom" constant="11" id="nqd-ec-m9b"/>
+                    <constraint firstItem="bqf-9a-xcr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="qFJ-po-7dK"/>
                     <constraint firstAttribute="trailing" secondItem="fhx-pG-AKP" secondAttribute="trailing" constant="8" id="rQe-Yl-s6k"/>
                     <constraint firstAttribute="bottom" secondItem="fhx-pG-AKP" secondAttribute="bottom" id="sGR-UA-AMh"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="adressLable" destination="bqf-9a-xcr" id="8IH-Mg-22c"/>
+                <outlet property="contentLable" destination="Atw-xq-VCN" id="bwU-VP-jV7"/>
+                <outlet property="tititleLable" destination="HJb-gS-wyy" id="J0r-fi-jzP"/>
+            </connections>
             <point key="canvasLocation" x="263" y="225"/>
         </tableViewCell>
     </objects>

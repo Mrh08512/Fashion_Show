@@ -10,4 +10,9 @@
 
 @interface AdressDescriptionCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *tititleLable;
+@property (weak, nonatomic) IBOutlet UILabel *adressLable;
+
+@property (weak, nonatomic) IBOutlet UILabel *contentLable;
+
 @end
