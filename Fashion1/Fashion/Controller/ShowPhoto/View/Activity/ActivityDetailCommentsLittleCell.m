@@ -1,18 +1,14 @@
 //
-//  ActivityDetailContentCell.m
+//  ActivityDetailCommentsLittleCell.m
 //  Fashion
 //
-//  Created by TangJR on 7/18/15.
+//  Created by TangJR on 7/19/15.
 //  Copyright (c) 2015 MRH-MAC. All rights reserved.
 //
 
-#import "ActivityDetailContentCell.h"
+#import "ActivityDetailCommentsLittleCell.h"
 
-@interface ActivityDetailContentCell ()
-
-@end
-
-@implementation ActivityDetailContentCell
+@implementation ActivityDetailCommentsLittleCell
 
 - (void)awakeFromNib {
     // Initialization code

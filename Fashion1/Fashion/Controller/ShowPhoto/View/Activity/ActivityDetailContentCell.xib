@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActivityDetailContentCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -83,14 +83,26 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送xxx咖啡一杯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1I-pl-SuW">
+                        <rect key="frame" x="66" y="135" width="244" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动便利:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45F-HE-WWQ">
                         <rect key="frame" x="12" y="135" width="51" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="送xxx咖啡一杯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1I-pl-SuW">
-                        <rect key="frame" x="66" y="135" width="244" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="活动内容:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzb-eg-goG">
+                        <rect key="frame" x="12" y="161" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号东郊记忆49号" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T97-hL-tfo">
+                        <rect key="frame" x="66" y="161" width="244" height="23.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -120,20 +132,28 @@
                     <constraint firstItem="EUV-Vb-YGp" firstAttribute="height" secondItem="hjn-8w-lix" secondAttribute="height" id="KWF-g3-5rx"/>
                     <constraint firstItem="2mH-lg-6zn" firstAttribute="height" secondItem="yB4-I9-PgQ" secondAttribute="height" id="NK8-Ex-DIO"/>
                     <constraint firstItem="LF0-YD-QIW" firstAttribute="width" secondItem="yB4-I9-PgQ" secondAttribute="width" id="O9F-iW-Ivm"/>
+                    <constraint firstItem="Kzb-eg-goG" firstAttribute="top" secondItem="45F-HE-WWQ" secondAttribute="bottom" constant="5" id="RqP-o3-9ZB"/>
                     <constraint firstItem="wT0-Bi-eJp" firstAttribute="height" secondItem="LF0-YD-QIW" secondAttribute="height" id="Ud5-Ra-bux"/>
                     <constraint firstItem="Ckh-IB-0Ja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Wat-qX-3tD"/>
                     <constraint firstItem="45F-HE-WWQ" firstAttribute="top" secondItem="IR4-Jx-IBY" secondAttribute="bottom" constant="5" id="ZDV-gH-bJF"/>
                     <constraint firstItem="EUV-Vb-YGp" firstAttribute="leading" secondItem="45F-HE-WWQ" secondAttribute="leading" constant="-1" id="c06-OR-Uh5"/>
                     <constraint firstItem="hjn-8w-lix" firstAttribute="top" secondItem="JPg-xh-vyB" secondAttribute="bottom" constant="5" id="cNS-q0-b4J"/>
+                    <constraint firstItem="T97-hL-tfo" firstAttribute="top" secondItem="Kzb-eg-goG" secondAttribute="top" id="cOr-Xk-Ddc"/>
                     <constraint firstItem="2mH-lg-6zn" firstAttribute="leading" secondItem="yB4-I9-PgQ" secondAttribute="leading" id="cWK-vy-J0E"/>
                     <constraint firstItem="2mH-lg-6zn" firstAttribute="centerY" secondItem="hjn-8w-lix" secondAttribute="centerY" id="e0e-Nt-OvJ"/>
                     <constraint firstItem="wT0-Bi-eJp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fBd-r7-LFM"/>
                     <constraint firstItem="IR4-Jx-IBY" firstAttribute="height" secondItem="2mH-lg-6zn" secondAttribute="height" id="fQ4-r3-mev"/>
+                    <constraint firstAttribute="bottom" secondItem="T97-hL-tfo" secondAttribute="bottom" constant="10" id="gME-UE-KSs"/>
+                    <constraint firstItem="Kzb-eg-goG" firstAttribute="width" secondItem="45F-HE-WWQ" secondAttribute="width" id="hGM-Lf-mqy"/>
                     <constraint firstItem="F1I-pl-SuW" firstAttribute="width" secondItem="IR4-Jx-IBY" secondAttribute="width" id="his-Qs-hsU"/>
                     <constraint firstItem="EUV-Vb-YGp" firstAttribute="centerX" secondItem="hjn-8w-lix" secondAttribute="centerX" id="hpB-ve-OQb"/>
+                    <constraint firstItem="Kzb-eg-goG" firstAttribute="centerX" secondItem="45F-HE-WWQ" secondAttribute="centerX" id="jHZ-Im-IoB"/>
+                    <constraint firstItem="Kzb-eg-goG" firstAttribute="height" secondItem="45F-HE-WWQ" secondAttribute="height" id="mBu-9A-5HX"/>
+                    <constraint firstItem="T97-hL-tfo" firstAttribute="centerX" secondItem="F1I-pl-SuW" secondAttribute="centerX" id="nim-Gz-9nZ"/>
                     <constraint firstItem="wT0-Bi-eJp" firstAttribute="top" secondItem="Ckh-IB-0Ja" secondAttribute="bottom" id="o4F-dB-CF3"/>
                     <constraint firstItem="Ckh-IB-0Ja" firstAttribute="leading" secondItem="fJn-NN-tcZ" secondAttribute="trailing" constant="3" id="pGt-5l-M3p"/>
                     <constraint firstItem="EUV-Vb-YGp" firstAttribute="width" secondItem="45F-HE-WWQ" secondAttribute="width" id="rVi-un-ke3"/>
+                    <constraint firstItem="T97-hL-tfo" firstAttribute="width" secondItem="F1I-pl-SuW" secondAttribute="width" id="swH-yY-YHE"/>
                     <constraint firstItem="wT0-Bi-eJp" firstAttribute="centerY" secondItem="LF0-YD-QIW" secondAttribute="centerY" id="tOb-lY-vDF"/>
                     <constraint firstItem="IR4-Jx-IBY" firstAttribute="leading" secondItem="2mH-lg-6zn" secondAttribute="leading" id="tUU-T2-4fX"/>
                     <constraint firstItem="EUV-Vb-YGp" firstAttribute="width" secondItem="hjn-8w-lix" secondAttribute="width" id="ubX-0s-bX7"/>
@@ -141,6 +161,9 @@
                     <constraint firstItem="wT0-Bi-eJp" firstAttribute="width" secondItem="JPg-xh-vyB" secondAttribute="width" id="zJS-hi-UF3"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="T97-hL-tfo" id="cYW-RF-oZ0"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

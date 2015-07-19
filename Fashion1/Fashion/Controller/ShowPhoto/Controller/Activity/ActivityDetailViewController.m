@@ -10,14 +10,17 @@
 #import "ActivityDetailHeaderCell.h"
 #import "ActivityDetailRegisterCell.h"
 #import "ActivityDetailContentCell.h"
+#import "ActivityDetailImagesCell.h"
 
-static NSString * const headerIdentifer = @"ActivityDetailHeaderCell";
-static NSString * const registerIdentifer = @"ActivityDetailRegisterCell";
-static NSString * const contentIdentifer = @"ActivityDetailContentCell";
+static NSString * const headerIdentifier = @"ActivityDetailHeaderCell";
+static NSString * const registerIdentifier = @"ActivityDetailRegisterCell";
+static NSString * const contentIdentifier = @"ActivityDetailContentCell";
+static NSString * const imagesIdentifier = @"ActivityDetailImagesCell";
 
 @interface ActivityDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) ActivityDetailContentCell *contentCell;
 
 @end
 
@@ -47,11 +50,15 @@ static NSString * const contentIdentifer = @"ActivityDetailContentCell";
     tableView.delegate = self;
     tableView.dataSource = self;
     tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailHeaderCell" bundle:nil] forCellReuseIdentifier:headerIdentifer];
-    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailRegisterCell" bundle:nil] forCellReuseIdentifier:registerIdentifer];
-    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailContentCell" bundle:nil] forCellReuseIdentifier:contentIdentifer];
+    tableView.showsVerticalScrollIndicator = NO;
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailHeaderCell" bundle:nil] forCellReuseIdentifier:headerIdentifier];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailRegisterCell" bundle:nil] forCellReuseIdentifier:registerIdentifier];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailContentCell" bundle:nil] forCellReuseIdentifier:contentIdentifier];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailImagesCell" bundle:nil] forCellReuseIdentifier:imagesIdentifier];
     [self.view addSubview:tableView];
     self.tableView = tableView;
+    
+    self.contentCell = [tableView dequeueReusableCellWithIdentifier:contentIdentifier];
 }
 
 #pragma mark - UITableViewDataSource
@@ -67,16 +74,20 @@ static NSString * const contentIdentifer = @"ActivityDetailContentCell";
     
     if (indexPath.section == 0) {
         
-        cell = [self.tableView dequeueReusableCellWithIdentifier:headerIdentifer];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:headerIdentifier];
         cell.contentView.backgroundColor = [UIColor redColor];
     }
     if (indexPath.section == 1) {
         
-        cell = [self.tableView dequeueReusableCellWithIdentifier:registerIdentifer];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:registerIdentifier];
     }
     if (indexPath.section == 2) {
         
-        cell = [self.tableView dequeueReusableCellWithIdentifier:contentIdentifer];
+        cell = [self.tableView dequeueReusableCellWithIdentifier:contentIdentifier];
+    }
+    if (indexPath.section == 3) {
+        
+        cell = [self.tableView dequeueReusableCellWithIdentifier:imagesIdentifier];
     }
     
     return cell;
@@ -89,7 +100,7 @@ static NSString * const contentIdentifer = @"ActivityDetailContentCell";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 3;
+    return 4;
 }
 
 #pragma mark - UITableViewDelegate
@@ -103,6 +114,19 @@ static NSString * const contentIdentifer = @"ActivityDetailContentCell";
     if (indexPath.section == 1) {
         
         return 110;
+    }
+    if (indexPath.section == 2) {
+        
+        ActivityDetailContentCell *cell = self.contentCell;
+        cell.translatesAutoresizingMaskIntoConstraints = NO;
+        CGFloat defaultHeight = CGRectGetHeight(cell.frame);
+        CGSize  size = [cell.contentLabel.text stringContetenSizeWithFount:cell.contentLabel.font andSize:CGSizeMake(cell.contentLabel.width, 10000)].size;
+        CGFloat height =    (size.height - 16) > 0 ? size.height - 16  + defaultHeight : defaultHeight;
+        return 1 + height;
+    }
+    if (indexPath.section == 3) {
+        
+        return 120;
     }
     return 200;
 }
