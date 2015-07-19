@@ -10,9 +10,11 @@
 #import "AdressDetailHeardCell.h"
 #import "AdressDescriptionCell.h"
 #import "PraiseViewCell.h"
-// 基于320寛
+#import "CommentCell.h"
 
-#define kTestContet @"dasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasio速度进口拉丝的就阿fjsakljfdlksajflkasdjf"
+
+#define kTestContet @"dasio速度丝的就阿f速度进口拉丝的就阿fdasio速度丝的就阿f速度进dasio速度丝的就阿f速度进"
+// 基于320寛
 #define kHearBaseHeihgt 327
 #define kHeardSpaceHeight SCREEN_WIDTH *0.618 - 320 *0.618
 
@@ -21,6 +23,8 @@
 @property (nonatomic,strong) UITableView *myTableView;
 // 要处理的的cell
 @property (nonatomic,strong) UITableViewCell *prototypeCell;
+
+@property (nonatomic,strong) UITableViewCell *commentCell;
 
 @end
 
@@ -55,51 +59,12 @@
     [self.view addSubview:_myTableView];
 }
 
-#pragma mark - private
-
-- (void)registerCell
-{
-    [_myTableView registerNib:[UINib nibWithNibName:@"AdressDescriptionCell" bundle:nil] forCellReuseIdentifier:@"AdressDescriptionCell"];
-    [_myTableView registerNib:[UINib nibWithNibName:@"AdressDetailHeardCell" bundle:nil] forCellReuseIdentifier:@"AdressDetailHeardCell"];
-    [_myTableView registerNib:[UINib nibWithNibName:@"PraiseViewCell" bundle:nil] forCellReuseIdentifier:@"PraiseViewCell"];
-    
-    // 特殊处理的cell
-    self.prototypeCell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDescriptionCell"];
-}
-
-- (UITableViewCell *)configTableViewCell:(NSIndexPath *)indexPath
-{
-    UITableViewCell *currentCell;
-    if (indexPath.section == 0 ) {
-        AdressDetailHeardCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDetailHeardCell"];
-        return cell;
-    }
-    else if (indexPath.section == 1)
-    {
-        AdressDescriptionCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDescriptionCell"];
-        cell.contentLable.text = kTestContet;
-        cell.tititleLable.text = @"123";
-        cell.adressLable.text = @"321";
-        return cell;
-    }
-    else if (indexPath.section == 2)
-    {
-        PraiseViewCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"PraiseViewCell"];
-        return cell;
-
-    }
-    {
-        return currentCell;
-    }
-    
-}
-
 
 #pragma mark - UITableViewDataSource/Delegate
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -110,10 +75,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self configTableViewCell:indexPath];
-
     return cell;
-
-   
+    
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -140,33 +104,80 @@
         
         AdressDescriptionCell *cell = (AdressDescriptionCell *)self.prototypeCell;
         cell.translatesAutoresizingMaskIntoConstraints = NO;
-//        cell.t.translatesAutoresizingMaskIntoConstraints = NO;
-//        cell.i.translatesAutoresizingMaskIntoConstraints = NO;
-        cell.tititleLable.text = @"123";
-        cell.adressLable.text = @"321";
         CGFloat defaultHeight = cell.contentView.frame.size.height;
         cell.contentLable.text = kTestContet;
         CGSize  s = [cell.contentLable.text stringContetenSizeWithFount:cell.contentLable.font andSize:CGSizeMake(cell.contentLable.width, 10000)].size;
         CGFloat height =    (s.height - 16) > 0 ?s.height - 16  + defaultHeight : defaultHeight;
-//        CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-        NSLog(@"h=%f", height + 1);
         return 1  + height;
+    }
+    
+    else if (indepath.section == 3)
+    {
+        CommentCell *cell = (CommentCell *)self.commentCell;
+        cell.t.text = kTestContet;
+        CGSize size = [cell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+        NSLog(@"h=%f", size.height + 1);
+        return 1  + size.height;
 
         
-//        C3 *cell = (C3 *)self.prototypeCell;
-//        NSString *str = [self.tableData objectAtIndex:indexPath.row];
-//        cell.t.text = str;
-//        CGSize s = [str calculateSize:CGSizeMake(cell.t.frame.size.width, FLT_MAX) font:cell.t.font];
-//        CGFloat defaultHeight = cell.contentView.frame.size.height;
-//        CGFloat height = s.height > defaultHeight ? s.height : defaultHeight;
-//        NSLog(@"h=%f", height);
-//        return 1  + height;
     }
     else
     {
         return 65;
     }
 }
+
+
+
+#pragma mark - private
+
+- (void)registerCell
+{
+    [_myTableView registerNib:[UINib nibWithNibName:@"AdressDescriptionCell" bundle:nil] forCellReuseIdentifier:@"AdressDescriptionCell"];
+    [_myTableView registerNib:[UINib nibWithNibName:@"AdressDetailHeardCell" bundle:nil] forCellReuseIdentifier:@"AdressDetailHeardCell"];
+    [_myTableView registerNib:[UINib nibWithNibName:@"PraiseViewCell" bundle:nil] forCellReuseIdentifier:@"PraiseViewCell"];
+    
+    [_myTableView registerNib:[UINib nibWithNibName:@"CommentCell" bundle:nil] forCellReuseIdentifier:@"CommentCell"];
+    
+    // 特殊处理的cell
+    self.prototypeCell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDescriptionCell"];
+    self.commentCell = [_myTableView dequeueReusableCellWithIdentifier:@"CommentCell"];
+}
+
+- (UITableViewCell *)configTableViewCell:(NSIndexPath *)indexPath
+{
+    UITableViewCell *currentCell;
+    if (indexPath.section == 0 ) {
+        AdressDetailHeardCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDetailHeardCell"];
+        return cell;
+    }
+    else if (indexPath.section == 1)
+    {
+        AdressDescriptionCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"AdressDescriptionCell"];
+        cell.contentLable.text = kTestContet;
+
+
+        return cell;
+    }
+    else if (indexPath.section == 2)
+    {
+        PraiseViewCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"PraiseViewCell"];
+        return cell;
+
+    }
+    else if (indexPath.section == 3)
+    {
+        CommentCell *cell = [_myTableView dequeueReusableCellWithIdentifier:@"CommentCell"];
+        cell.t.text = kTestContet;
+        return cell;
+    }
+    else
+    {
+        return nil;
+    }
+    
+}
+
 
 
 - (void)didReceiveMemoryWarning {

@@ -17,7 +17,7 @@
                 <subviews>
                     <view alpha="0.34999999999999964" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhx-pG-AKP">
                         <rect key="frame" x="8" y="0.0" width="304" height="104"/>
-                        <color key="backgroundColor" red="1" green="0.13083957390000001" blue="0.1311786825" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题：我来到你的城市" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJb-gS-wyy">
                         <rect key="frame" x="16" y="16" width="150" height="18"/>

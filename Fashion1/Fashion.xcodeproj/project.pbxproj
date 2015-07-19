@@ -122,13 +122,13 @@
 		18983B081B33D6C000C8286E /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983AFE1B33D6C000C8286E /* UIScrollView+MJExtension.m */; };
 		18983B091B33D6C000C8286E /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B001B33D6C000C8286E /* UIScrollView+MJRefresh.m */; };
 		18983B0A1B33D6C000C8286E /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18983B021B33D6C000C8286E /* UIView+MJExtension.m */; };
+		18B8A5F61B5B59A000CD35CD /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A5F41B5B59A000CD35CD /* CommentCell.m */; };
+		18B8A5F71B5B59A000CD35CD /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A5F51B5B59A000CD35CD /* CommentCell.xib */; };
 		18DBE2DE1B59F44D003D13EF /* AdressDescriptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2DC1B59F44D003D13EF /* AdressDescriptionCell.m */; };
 		18DBE2DF1B59F44D003D13EF /* AdressDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2DD1B59F44D003D13EF /* AdressDescriptionCell.xib */; };
 		18DBE2E31B59F718003D13EF /* PraiseViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E11B59F718003D13EF /* PraiseViewCell.m */; };
 		18DBE2E41B59F718003D13EF /* PraiseViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */; };
 		18DBE2E71B59F8C4003D13EF /* PraiseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E61B59F8C4003D13EF /* PraiseView.m */; };
-		18DBE2EB1B5A3289003D13EF /* CommentsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DBE2E91B5A3289003D13EF /* CommentsCell.m */; };
-		18DBE2EC1B5A3289003D13EF /* CommentsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */; };
 		18E3F1AB1B37C57E007636AB /* CustomTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */; };
 		18E3F1AE1B37CD47007636AB /* CustomTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E3F1AD1B37CD47007636AB /* CustomTabBarItem.m */; };
 		18F7C54E1B54C11600D90933 /* BrandDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C54D1B54C11600D90933 /* BrandDetailModel.m */; };
@@ -436,6 +436,9 @@
 		18983B001B33D6C000C8286E /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		18983B011B33D6C000C8286E /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		18983B021B33D6C000C8286E /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		18B8A5F31B5B59A000CD35CD /* CommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		18B8A5F41B5B59A000CD35CD /* CommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
+		18B8A5F51B5B59A000CD35CD /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		18DBE2DB1B59F44D003D13EF /* AdressDescriptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdressDescriptionCell.h; sourceTree = "<group>"; };
 		18DBE2DC1B59F44D003D13EF /* AdressDescriptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdressDescriptionCell.m; sourceTree = "<group>"; };
 		18DBE2DD1B59F44D003D13EF /* AdressDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdressDescriptionCell.xib; sourceTree = "<group>"; };
@@ -444,9 +447,6 @@
 		18DBE2E21B59F718003D13EF /* PraiseViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PraiseViewCell.xib; sourceTree = "<group>"; };
 		18DBE2E51B59F8C4003D13EF /* PraiseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PraiseView.h; sourceTree = "<group>"; };
 		18DBE2E61B59F8C4003D13EF /* PraiseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PraiseView.m; sourceTree = "<group>"; };
-		18DBE2E81B5A3289003D13EF /* CommentsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsCell.h; sourceTree = "<group>"; };
-		18DBE2E91B5A3289003D13EF /* CommentsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsCell.m; sourceTree = "<group>"; };
-		18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentsCell.xib; sourceTree = "<group>"; };
 		18E3F1A91B37C57E007636AB /* CustomTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarView.h; sourceTree = "<group>"; };
 		18E3F1AA1B37C57E007636AB /* CustomTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarView.m; sourceTree = "<group>"; };
 		18E3F1AC1B37CD47007636AB /* CustomTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarItem.h; sourceTree = "<group>"; };
@@ -1035,15 +1035,15 @@
 		189838EE1B33C68C00C8286E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18B8A5F31B5B59A000CD35CD /* CommentCell.h */,
+				18B8A5F41B5B59A000CD35CD /* CommentCell.m */,
+				18B8A5F51B5B59A000CD35CD /* CommentCell.xib */,
 				183734831B4E65C900720BFE /* ImageButton.h */,
 				183734841B4E65C900720BFE /* ImageButton.m */,
 				183734801B4E659A00720BFE /* CornersImageView.h */,
 				183734811B4E659A00720BFE /* CornersImageView.m */,
 				18DBE2E51B59F8C4003D13EF /* PraiseView.h */,
 				18DBE2E61B59F8C4003D13EF /* PraiseView.m */,
-				18DBE2E81B5A3289003D13EF /* CommentsCell.h */,
-				18DBE2E91B5A3289003D13EF /* CommentsCell.m */,
-				18DBE2EA1B5A3289003D13EF /* CommentsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1721,6 +1721,7 @@
 				1872BA211B58FECB003881CB /* AdressDetailHeardCell.xib in Resources */,
 				96834C8D1B54DC6D00C7344D /* ActivityListTableViewCell.xib in Resources */,
 				18F7C55D1B54FCF900D90933 /* UserInfoCollectionCell.xib in Resources */,
+				18B8A5F71B5B59A000CD35CD /* CommentCell.xib in Resources */,
 				18F7C57A1B55084600D90933 /* m3.jpg in Resources */,
 				96F0B5C51B58F3FE00F7C193 /* RewardListTableViewCell.xib in Resources */,
 				1837347F1B4E1E1D00720BFE /* ConmetsCellTableViewCell.xib in Resources */,
@@ -1752,7 +1753,6 @@
 				18F7C55F1B54FCF900D90933 /* UserInfoCollectionHeaderView.xib in Resources */,
 				18FFE0DC1B5769DF006F21A8 /* FriendListCell.xib in Resources */,
 				18F7C5791B55084600D90933 /* m2.jpg in Resources */,
-				18DBE2EC1B5A3289003D13EF /* CommentsCell.xib in Resources */,
 				18F7C57D1B55084600D90933 /* m6.jpg in Resources */,
 				96834C541B52A0CD00C7344D /* PlazaPublishInputView.xib in Resources */,
 				1898397C1B33C8CE00C8286E /* MBProgressHUD.bundle in Resources */,
@@ -1868,7 +1868,6 @@
 				18FFE0DB1B5769DF006F21A8 /* FriendListCell.m in Sources */,
 				189839861B33C8CE00C8286E /* MKAnnotationView+WebCache.m in Sources */,
 				1805AE581B53AC2500BEB024 /* WaterFlowLayout.m in Sources */,
-				18DBE2EB1B5A3289003D13EF /* CommentsCell.m in Sources */,
 				9695F0A51B516AE000A4844C /* MASViewAttribute.m in Sources */,
 				9695F0741B51516500A4844C /* GTMBase64.m in Sources */,
 				1898399B1B33C8CE00C8286E /* UIImageView+AFNetworking.m in Sources */,
@@ -1894,6 +1893,7 @@
 				96834C4F1B528F7A00C7344D /* DrawViewController.m in Sources */,
 				1898399A1B33C8CE00C8286E /* UIButton+AFNetworking.m in Sources */,
 				96CC49641B5B560200042FD0 /* ActivityDetailCommentsBigCell.m in Sources */,
+				18B8A5F61B5B59A000CD35CD /* CommentCell.m in Sources */,
 				1898399D1B33C8CE00C8286E /* UIRefreshControl+AFNetworking.m in Sources */,
 				96834C7E1B53D47900C7344D /* BackBaseViewController.m in Sources */,
 				96834C6E1B53CE1700C7344D /* ActivityViewController.m in Sources */,
