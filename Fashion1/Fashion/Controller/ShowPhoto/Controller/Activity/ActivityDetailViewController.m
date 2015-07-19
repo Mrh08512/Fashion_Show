@@ -11,11 +11,13 @@
 #import "ActivityDetailRegisterCell.h"
 #import "ActivityDetailContentCell.h"
 #import "ActivityDetailImagesCell.h"
+#import "ActivityDetailCommentsBigCell.h"
 
 static NSString * const headerIdentifier = @"ActivityDetailHeaderCell";
 static NSString * const registerIdentifier = @"ActivityDetailRegisterCell";
 static NSString * const contentIdentifier = @"ActivityDetailContentCell";
 static NSString * const imagesIdentifier = @"ActivityDetailImagesCell";
+static NSString * const commetnIdentifier = @"ActivityDetailCommentsBigCell";
 
 @interface ActivityDetailViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -55,6 +57,7 @@ static NSString * const imagesIdentifier = @"ActivityDetailImagesCell";
     [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailRegisterCell" bundle:nil] forCellReuseIdentifier:registerIdentifier];
     [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailContentCell" bundle:nil] forCellReuseIdentifier:contentIdentifier];
     [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailImagesCell" bundle:nil] forCellReuseIdentifier:imagesIdentifier];
+    [tableView registerNib:[UINib nibWithNibName:@"ActivityDetailCommentsBigCell" bundle:nil] forCellReuseIdentifier:commetnIdentifier];
     [self.view addSubview:tableView];
     self.tableView = tableView;
     
