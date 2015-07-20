@@ -10,4 +10,6 @@
 
 @interface ActivityDetailCommentsLittleCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+
 @end

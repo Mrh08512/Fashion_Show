@@ -14,6 +14,7 @@ static NSString * const identifier = @"ActivityDetailCommentsLittleCell";
 @interface ActivityDetailCommentsBigCell () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) ActivityDetailCommentsLittleCell *currentConfigCell;
 
 @end
 
@@ -41,8 +42,22 @@ static NSString * const identifier = @"ActivityDetailCommentsLittleCell";
 - (ActivityDetailCommentsLittleCell *)configCellWithIndexPath:(NSIndexPath *)indexPath {
     
     ActivityDetailCommentsLittleCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
-    
+    self.currentConfigCell = cell;
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (self.currentConfigCell) {
+        
+        ActivityDetailCommentsLittleCell *cell = self.currentConfigCell;
+        cell.translatesAutoresizingMaskIntoConstraints = NO;
+        CGFloat defaultHeight = CGRectGetHeight(cell.frame);
+        CGSize size = [cell.commentLabel.text stringContetenSizeWithFount:cell.commentLabel.font andSize:CGSizeMake(cell.commentLabel.width, 10000)].size;
+        CGFloat height =    (size.height - 16) > 0 ? size.height - 16  + defaultHeight : defaultHeight;
+        return 1 + height;
+    }
+    return 70;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

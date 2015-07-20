@@ -92,6 +92,12 @@ static NSString * const commetnIdentifier = @"ActivityDetailCommentsBigCell";
         
         cell = [self.tableView dequeueReusableCellWithIdentifier:imagesIdentifier];
     }
+    if (indexPath.section == 4) {
+        
+        cell = [self.tableView dequeueReusableCellWithIdentifier:commetnIdentifier];
+    }
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
     return cell;
 }
@@ -103,7 +109,7 @@ static NSString * const commetnIdentifier = @"ActivityDetailCommentsBigCell";
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 4;
+    return 5;
 }
 
 #pragma mark - UITableViewDelegate
@@ -131,7 +137,7 @@ static NSString * const commetnIdentifier = @"ActivityDetailCommentsBigCell";
         
         return 120;
     }
-    return 200;
+    return 400;
 }
 
 @end
